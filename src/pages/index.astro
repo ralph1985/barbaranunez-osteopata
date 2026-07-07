@@ -1,0 +1,25 @@
+---
+import { getSiteContent } from "../infrastructure/content/local-site-repository";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactSection from "../sections/ContactSection.astro";
+import HeroSection from "../sections/HeroSection.astro";
+import ServicesSection from "../sections/ServicesSection.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout site={site}>
+  <HeroSection site={site} />
+  <section class="section section--muted" aria-labelledby="about-title">
+    <div class="section__header">
+      <p class="eyebrow">Sobre Bárbara</p>
+      <h2 id="about-title">Contenido pendiente de redacción final</h2>
+      <p>
+        Este hito deja preparada la estructura. La biografia profesional se
+        redactara despues de inventariar y revisar el contenido actual.
+      </p>
+    </div>
+  </section>
+  <ServicesSection services={site.services} />
+  <ContactSection contact={site.contact} />
+</BaseLayout>

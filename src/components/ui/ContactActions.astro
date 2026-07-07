@@ -1,0 +1,15 @@
+---
+interface Props {
+  phone: string;
+  email: string;
+}
+
+const { phone, email } = Astro.props;
+const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
+---
+
+<div class="contact-actions">
+  <a class="button button--primary" href={phoneHref}>Pedir cita</a>
+  <a class="button button--secondary" href={`mailto:${email}`}>Escribir email</a
+  >
+</div>

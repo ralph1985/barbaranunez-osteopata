@@ -1,0 +1,56 @@
+---
+import type { SiteContent } from "../domain/site";
+import "../styles/main.css";
+
+interface Props {
+  site: SiteContent;
+  currentPath?: string;
+}
+
+const { site, currentPath = "/" } = Astro.props;
+---
+
+<!doctype html>
+<html lang={site.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={site.description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{site.title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        class="site-header__brand"
+        href="/"
+        aria-current={currentPath === "/" ? "page" : undefined}
+      >
+        {site.businessName}
+      </a>
+      <nav class="site-header__nav" aria-label="Navegacion principal">
+        {
+          site.nav.map((item) => (
+            <a
+              href={item.href}
+              aria-current={currentPath === item.href ? "page" : undefined}
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>{site.businessName} - Web en construccion.</p>
+      <nav aria-label="Legal">
+        <a href="/legal/aviso-legal/">Aviso legal</a>
+        <a href="/legal/privacidad/">Privacidad</a>
+        <a href="/legal/cookies/">Cookies</a>
+      </nav>
+    </footer>
+  </body>
+</html>
