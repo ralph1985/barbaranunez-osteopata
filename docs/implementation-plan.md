@@ -9,6 +9,7 @@ Crear una nueva web pública para Bárbara Núñez Osteópata, con una landing r
 - Repositorio publico en GitHub desde el inicio.
 - Trabajo por PRs pequeños y revisables.
 - Este documento se actualiza al inicio o cierre de cada hito.
+- El tiempo empleado se registra en `docs/time-log.md`.
 - No subir fotos de la web actual hasta confirmar permiso de reutilizacion.
 - No publicar textos legales como definitivos hasta validar datos de titularidad, privacidad y cookies.
 
@@ -16,7 +17,7 @@ Crear una nueva web pública para Bárbara Núñez Osteópata, con una landing r
 
 ### Hito 1 - Scaffold Y Plan
 
-Estado: en progreso.
+Estado: completado el 8 de julio de 2026.
 
 Entregable:
 
@@ -24,6 +25,12 @@ Entregable:
 - README, contexto de proyecto y plan vivo.
 - Landing provisional sin fotos reales ni contenido legal definitivo.
 - Validacion local con lint, build y `git diff --check`.
+
+Resultado:
+
+- Scaffold y documentación fusionados en `main`.
+- Validación completada con lint, build y `git diff --check`.
+- Tiempo comunicado: 30 minutos.
 
 ### Hito 2 - Inventario Y Contenido
 

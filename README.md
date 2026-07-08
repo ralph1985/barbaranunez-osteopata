@@ -2,7 +2,7 @@
 
 Nueva web profesional para Bárbara Núñez, osteópata y profesional de pilates en Meco.
 
-El proyecto está en fase inicial. El primer hito crea la base técnica y el plan vivo de implementación sin publicar fotos ni textos legales definitivos.
+El primer hito creó la base técnica y el plan vivo de implementación sin publicar fotos ni textos legales definitivos.
 
 ## Desarrollo
 
@@ -21,3 +21,11 @@ corepack pnpm run build
 ## Plan
 
 El plan vivo está en [`docs/implementation-plan.md`](docs/implementation-plan.md).
+
+## Registro De Tiempo
+
+El seguimiento facturable está en [`docs/time-log.md`](docs/time-log.md). Para añadir un registro manual:
+
+```bash
+corepack pnpm run log:time
+```
