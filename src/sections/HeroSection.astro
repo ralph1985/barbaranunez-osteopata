@@ -1,0 +1,22 @@
+---
+import ContactActions from "../components/ui/ContactActions.astro";
+import type { SiteContent } from "../domain/site";
+
+interface Props {
+  site: SiteContent;
+}
+
+const { site } = Astro.props;
+---
+
+<section class="hero">
+  <div class="hero__content">
+    <p class="eyebrow">Osteopatia - Pilates - Masaje deportivo</p>
+    <h1>{site.claim}</h1>
+    <p>{site.intro}</p>
+    <ContactActions phone={site.contact.phone} email={site.contact.email} />
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <span></span>
+  </div>
+</section>

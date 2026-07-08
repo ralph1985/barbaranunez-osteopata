@@ -1,0 +1,55 @@
+{
+  "lang": "es",
+  "title": "Bárbara Núñez Osteópata",
+  "description": "Nueva web profesional para consulta de osteopatía, masaje deportivo y pilates en Meco.",
+  "businessName": "Bárbara Núñez",
+  "claim": "Osteopatía y pilates para recuperar movimiento, equilibrio y bienestar.",
+  "intro": "Primera base técnica de la nueva web. El contenido definitivo se reescribirá en el siguiente hito a partir de la web actual.",
+  "nav": [
+    {
+      "label": "Inicio",
+      "href": "/"
+    },
+    {
+      "label": "Servicios",
+      "href": "/#servicios"
+    },
+    {
+      "label": "Contacto",
+      "href": "/#contacto"
+    }
+  ],
+  "services": [
+    {
+      "title": "Osteopatía estructural",
+      "summary": "Servicio pendiente de redacción final."
+    },
+    {
+      "title": "Osteopatía craneosacral",
+      "summary": "Servicio pendiente de redacción final."
+    },
+    {
+      "title": "Técnico masajista deportivo",
+      "summary": "Servicio pendiente de redacción final."
+    },
+    {
+      "title": "Pilates máquina",
+      "summary": "Servicio pendiente de redacción final."
+    },
+    {
+      "title": "Pilates mat",
+      "summary": "Servicio pendiente de redacción final."
+    }
+  ],
+  "contact": {
+    "phone": "620 88 89 37",
+    "email": "info@barbaranunez-osteopata.es",
+    "address": "C/ Grecia, 9-D",
+    "city": "28880 Meco, Madrid",
+    "hours": [
+      "Lunes a viernes de 09:00 a 14:00",
+      "Lunes a viernes de 16:00 a 21:00",
+      "Sábados de 09:00 a 14:00"
+    ]
+  }
+}

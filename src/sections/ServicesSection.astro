@@ -1,0 +1,30 @@
+---
+import type { Service } from "../domain/site";
+
+interface Props {
+  services: Service[];
+}
+
+const { services } = Astro.props;
+---
+
+<section class="section" id="servicios" aria-labelledby="services-title">
+  <div class="section__header">
+    <p class="eyebrow">Servicios</p>
+    <h2 id="services-title">Una base clara para explicar cada tratamiento</h2>
+    <p>
+      Estos bloques son provisionales. En el siguiente hito se reescribira cada
+      servicio con contenido final revisable.
+    </p>
+  </div>
+  <div class="services-grid">
+    {
+      services.map((service) => (
+        <article class="service-card">
+          <h3>{service.title}</h3>
+          <p>{service.summary}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

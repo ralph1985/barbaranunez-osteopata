@@ -1,0 +1,18 @@
+---
+import { getSiteContent } from "../../infrastructure/content/local-site-repository";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout site={site} currentPath="/legal/cookies/">
+  <section class="section legal-page">
+    <p class="eyebrow">Legal</p>
+    <h1>Política de cookies</h1>
+    <p>
+      Texto pendiente de validación. La V1 no debe añadir cookies no necesarias,
+      analytics ni embeds externos sin decidir antes la política
+      correspondiente.
+    </p>
+  </section>
+</BaseLayout>

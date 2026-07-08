@@ -1,0 +1,29 @@
+---
+import ContactActions from "../components/ui/ContactActions.astro";
+import type { ContactInfo } from "../domain/site";
+
+interface Props {
+  contact: ContactInfo;
+}
+
+const { contact } = Astro.props;
+---
+
+<section class="section contact" id="contacto" aria-labelledby="contact-title">
+  <div>
+    <p class="eyebrow">Contacto</p>
+    <h2 id="contact-title">Cita previa y ubicación</h2>
+    <p>{contact.address}</p>
+    <p>{contact.city}</p>
+    <p>
+      <a href={`mailto:${contact.email}`}>{contact.email}</a>
+    </p>
+    <ContactActions phone={contact.phone} email={contact.email} />
+  </div>
+  <div class="contact__hours">
+    <h3>Horario actual a verificar</h3>
+    <ul>
+      {contact.hours.map((hour) => <li>{hour}</li>)}
+    </ul>
+  </div>
+</section>

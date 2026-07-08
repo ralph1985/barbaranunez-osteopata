@@ -1,0 +1,18 @@
+---
+import { getSiteContent } from "../../infrastructure/content/local-site-repository";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout site={site} currentPath="/legal/aviso-legal/">
+  <section class="section legal-page">
+    <p class="eyebrow">Legal</p>
+    <h1>Aviso legal</h1>
+    <p>
+      Texto pendiente de validación. No publicar como definitivo hasta confirmar
+      datos legales de titularidad, actividad, domicilio fiscal y condiciones de
+      uso.
+    </p>
+  </section>
+</BaseLayout>
