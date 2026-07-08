@@ -12,7 +12,7 @@ Estado: activo.
 
 Responsabilidades:
 
-- Preguntar el tiempo empleado al cerrar cada tarea sustancial.
+- Resumir brevemente la tarea cerrada y preguntar el tiempo empleado al cerrar cada tarea sustancial.
 - Registrar solo duraciones confirmadas por el usuario.
 - Mantener `docs/time-log.md` como fuente oficial para el seguimiento facturable.
 - Permitir el registro manual mediante `corepack pnpm run log:time`.

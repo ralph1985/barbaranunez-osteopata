@@ -3,7 +3,8 @@
 ## Registro De Tiempo
 
 - `docs/time-log.md` es el registro oficial de horas facturables del proyecto.
-- Al terminar una tarea sustancial, pregunta: "¿Cuánto tiempo te llevó esta tarea para registrarlo?"
+- Al terminar una tarea sustancial, muestra primero una breve descripción de lo que se hizo y después pregunta: "¿Cuánto tiempo te llevó esta tarea para registrarlo?"
+- La descripción debe ser concreta y corta, suficiente para que el usuario identifique la tarea que se va a registrar.
 - Una tarea sustancial es una unidad de trabajo implementada o cerrada. No incluye conversaciones, análisis sin cambios ni el propio registro de tiempo.
 - No estimes ni inventes duraciones. Registra únicamente el tiempo confirmado por el usuario.
 - Si la respuesta llega en un turno posterior, registra primero la tarea pendiente antes de comenzar otra.
