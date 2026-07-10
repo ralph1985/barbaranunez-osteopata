@@ -28,7 +28,11 @@ const { site } = Astro.props;
     </h1>
     <p class="max-w-2xl text-lg text-muted" data-hero-item>{site.intro}</p>
     <div data-hero-item>
-      <ContactActions phone={site.contact.phone} email={site.contact.email} />
+      <ContactActions
+        phone={site.contact.phone}
+        email={site.contact.email}
+        whatsappHref={site.contact.whatsappHref}
+      />
     </div>
     <dl
       class="grid max-w-xl grid-cols-2 gap-3 max-md:grid-cols-1"

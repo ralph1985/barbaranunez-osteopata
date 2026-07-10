@@ -42,10 +42,8 @@ const socialImageUrl = getAbsoluteUrl("/assets/clinic-placeholder.png");
     <meta name="twitter:image" content={socialImageUrl} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <header
-      class="mx-auto flex w-page items-center justify-between gap-6 py-4 max-md:flex-col max-md:items-start"
-    >
+  <body class="overflow-x-hidden">
+    <header class="mx-auto flex w-page items-center justify-between gap-6 py-4">
       <a
         class="font-bold text-accent-strong no-underline"
         href="/"
@@ -53,7 +51,7 @@ const socialImageUrl = getAbsoluteUrl("/assets/clinic-placeholder.png");
       >
         {site.businessName}
       </a>
-      <nav class="flex flex-wrap gap-3" aria-label="Navegacion principal">
+      <nav class="hidden" aria-label="Navegacion principal">
         {
           site.nav.map((item) => (
             <a
@@ -66,7 +64,67 @@ const socialImageUrl = getAbsoluteUrl("/assets/clinic-placeholder.png");
           ))
         }
       </nav>
+      <button
+        class="inline-flex min-h-11 items-center gap-3 rounded-md border border-line bg-surface px-4 py-2 font-bold text-accent-strong shadow-card"
+        type="button"
+        aria-controls="site-menu"
+        aria-expanded="false"
+        data-menu-open
+      >
+        <span>Menú</span>
+        <span class="grid gap-1" aria-hidden="true">
+          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+        </span>
+      </button>
     </header>
+    <div
+      class="fixed inset-0 z-40 hidden bg-ink/40 opacity-0 transition-opacity"
+      data-menu-overlay
+    >
+    </div>
+    <aside
+      id="site-menu"
+      class="fixed top-0 right-0 z-50 flex h-dvh w-[min(24rem,calc(100%-2rem))] translate-x-full flex-col gap-8 border-l border-line bg-surface p-6 shadow-soft transition-transform"
+      aria-label="Menú principal"
+      aria-hidden="true"
+      data-menu-panel
+    >
+      <div class="flex items-center justify-between gap-4">
+        <p class="m-0 font-bold text-accent-strong">{site.businessName}</p>
+        <button
+          class="inline-flex min-h-10 min-w-10 items-center justify-center rounded-md border border-line bg-bg text-2xl leading-none text-accent-strong"
+          type="button"
+          aria-label="Cerrar menú"
+          data-menu-close
+        >
+          ×
+        </button>
+      </div>
+      <nav class="grid gap-3" aria-label="Navegación lateral">
+        {
+          site.nav.map((item) => (
+            <a
+              class="rounded-md border border-line px-4 py-3 text-lg font-bold text-ink no-underline hover:border-accent-strong hover:text-accent-strong"
+              href={item.href}
+              aria-current={currentPath === item.href ? "page" : undefined}
+              data-menu-link
+            >
+              {item.label}
+            </a>
+          ))
+        }
+      </nav>
+      <a
+        class="mt-auto inline-flex min-h-11 items-center justify-center rounded-md border border-accent-strong bg-accent-strong px-4 py-3 font-bold text-white no-underline"
+        href={site.contact.whatsappHref}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </a>
+    </aside>
     <main>
       <slot />
     </main>

@@ -11,6 +11,7 @@ export interface Service {
 export interface ContactInfo {
   phone: string;
   landline?: string;
+  whatsappHref: string;
   email: string;
   address: string;
   city: string;

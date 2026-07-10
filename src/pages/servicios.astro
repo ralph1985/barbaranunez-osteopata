@@ -1,0 +1,22 @@
+---
+import PageIntro from "../components/ui/PageIntro.astro";
+import { getSiteContent } from "../infrastructure/content/local-site-repository";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ServicesSection from "../sections/ServicesSection.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout
+  site={site}
+  currentPath="/servicios/"
+  title="Servicios"
+  description="Servicios de osteopatía estructural, osteopatía craneosacral, masaje deportivo, pilates máquina y pilates mat en Meco."
+>
+  <PageIntro
+    eyebrow="Servicios"
+    title="Osteopatía, masaje deportivo y pilates"
+    description="Tratamientos y clases para mejorar movilidad, postura, fuerza y recuperación física desde un trabajo progresivo."
+  />
+  <ServicesSection services={site.services} />
+</BaseLayout>

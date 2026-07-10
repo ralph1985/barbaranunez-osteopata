@@ -21,6 +21,11 @@ const { contact } = Astro.props;
     <p>{contact.address}</p>
     <p>{contact.city}</p>
     <p>
+      <a href={contact.whatsappHref} target="_blank" rel="noopener noreferrer"
+        >WhatsApp</a
+      >
+    </p>
+    <p>
       <a href={`tel:${contact.phone.replace(/\s+/g, "")}`}>{contact.phone}</a>
       {
         contact.landline && (
@@ -41,8 +46,10 @@ const { contact } = Astro.props;
     <ContactActions
       email={contact.email}
       phone={contact.phone}
+      whatsappHref={contact.whatsappHref}
       primaryVariant="light"
       secondaryVariant="outlineLight"
+      tertiaryVariant="outlineLight"
     />
   </div>
 </div>

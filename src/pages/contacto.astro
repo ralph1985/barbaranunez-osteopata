@@ -1,0 +1,22 @@
+---
+import PageIntro from "../components/ui/PageIntro.astro";
+import { getSiteContent } from "../infrastructure/content/local-site-repository";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactSection from "../sections/ContactSection.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout
+  site={site}
+  currentPath="/contacto/"
+  title="Contacto"
+  description="Contacto, WhatsApp, teléfono, email, dirección y horario de la consulta de Bárbara Núñez en Meco."
+>
+  <PageIntro
+    eyebrow="Contacto"
+    title="Cita previa y ubicación"
+    description="Contacta por WhatsApp, teléfono o email para pedir cita en la consulta de Meco."
+  />
+  <ContactSection contact={site.contact} />
+</BaseLayout>
