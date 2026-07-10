@@ -5,9 +5,10 @@ Este proyecto es la nueva web profesional de Bárbara Núñez, osteópata, técn
 ## Estado Actual
 
 - Proyecto nuevo e independiente en Astro con salida estática.
-- El primer hito solo crea scaffold técnico, estructura de contenido local y plan vivo.
+- El primer hito de scaffold técnico, estructura de contenido local y plan vivo está completado.
 - La landing definitiva se construirá por hitos pequeños y revisables.
 - El repositorio sera publico desde el inicio, asi que no se deben subir fotos sin permiso ni datos legales no verificados.
+- El tiempo facturable se registra en `docs/time-log.md` siguiendo las reglas de `AGENTS.md`.
 
 ## Decisiones
 

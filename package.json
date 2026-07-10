@@ -8,9 +8,10 @@
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
+    "log:time": "node scripts/log-time.mjs",
     "lint": "pnpm run lint:astro && pnpm run format:check",
     "lint:astro": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs \"src/**/*.{astro,ts,js,json}\" \"docs/**/*.md\" README.md PROJECT_CONTEXT.md"
+    "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs \"src/**/*.{astro,ts,js,json}\" \"scripts/**/*.mjs\" \"docs/**/*.md\" AGENTS.md README.md PROJECT_CONTEXT.md"
   },
   "dependencies": {
     "astro": "7.0.4"
