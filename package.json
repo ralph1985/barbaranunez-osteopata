@@ -11,7 +11,7 @@
     "log:time": "node scripts/log-time.mjs",
     "lint": "pnpm run lint:astro && pnpm run format:check",
     "lint:astro": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs \"src/**/*.{astro,ts,js,json,css}\" \"scripts/**/*.mjs\" \"docs/**/*.md\" AGENTS.md README.md PROJECT_CONTEXT.md"
+    "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs vercel.json \"src/**/*.{astro,ts,js,json,css}\" \"scripts/**/*.mjs\" \"docs/**/*.md\" AGENTS.md README.md PROJECT_CONTEXT.md"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.2",

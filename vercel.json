@@ -1,0 +1,5 @@
+{
+  "buildCommand": "corepack pnpm run build",
+  "outputDirectory": "dist",
+  "framework": "astro"
+}

@@ -6,12 +6,44 @@ import LegalContent from "../../components/ui/LegalContent.astro";
 const site = await getSiteContent();
 ---
 
-<BaseLayout site={site} currentPath="/legal/aviso-legal/">
+<BaseLayout
+  site={site}
+  currentPath="/legal/aviso-legal/"
+  title="Aviso legal"
+  description="Aviso legal de la web de Bárbara Núñez Osteópata, con datos de titularidad pendientes de validación final."
+>
   <LegalContent title="Aviso legal">
     <p>
-      Texto pendiente de validación. No publicar como definitivo hasta confirmar
-      datos legales de titularidad, actividad, domicilio fiscal y condiciones de
-      uso.
+      Esta página es una base revisable para la publicación de la web. No debe
+      considerarse texto legal definitivo hasta confirmar los datos completos de
+      titularidad y actividad.
     </p>
+    <section>
+      <h2>Datos pendientes de titularidad</h2>
+      <ul>
+        <li>Nombre o razón social de la persona responsable.</li>
+        <li>NIF/CIF u otro identificador fiscal que corresponda.</li>
+        <li>Domicilio fiscal o dirección legal de contacto.</li>
+        <li>Datos colegiales o profesionales si aplican.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Información pública de contacto</h2>
+      <p>
+        Consulta en {site.contact.address}, {site.contact.city}. Teléfono: {
+          site.contact.phone
+        }. Correo: <a href={`mailto:${site.contact.email}`}
+          >{site.contact.email}</a
+        >.
+      </p>
+    </section>
+    <section>
+      <h2>Condiciones de uso</h2>
+      <p>
+        El contenido de esta web tiene finalidad informativa sobre los servicios
+        de osteopatía, masaje deportivo y pilates. La información publicada no
+        sustituye una valoración profesional individual.
+      </p>
+    </section>
   </LegalContent>
 </BaseLayout>

@@ -15,7 +15,9 @@ const { title } = Astro.props;
   <h1 class="m-0 text-[clamp(2rem,4.6vw,3.7rem)] leading-[1.05] font-bold">
     {title}
   </h1>
-  <div class="mt-5 max-w-2xl text-lg text-muted">
+  <div
+    class="mt-5 max-w-3xl space-y-6 text-lg text-muted [&_h2]:mb-3 [&_h2]:text-2xl [&_h2]:leading-tight [&_h2]:font-bold [&_h2]:text-ink [&_li]:mt-2 [&_p]:my-0 [&_ul]:my-0 [&_ul]:pl-5"
+  >
     <slot />
   </div>
 </section>
