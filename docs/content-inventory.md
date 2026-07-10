@@ -9,7 +9,7 @@ Fuente principal: `https://www.barbaranunez-osteopata.es/`.
 - Nombre público: Bárbara Núñez / Bárbara Núñez Osteópata.
 - Actividad principal: osteopatía, pilates y masaje deportivo.
 - Claim actual de referencia: "El movimiento es la vida".
-- Ubicación: C/ Grecia, 9-D, 28880 Meco, Madrid.
+- Ubicación: C/ Grecia, 9-D, 28880 Meco (Madrid).
 - Teléfono móvil: 620 88 89 37.
 - Teléfono fijo: 91 113 68 43.
 - Email: info@barbaranunez-osteopata.es.

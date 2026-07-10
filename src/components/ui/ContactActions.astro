@@ -1,6 +1,4 @@
 ---
-import Button from "./Button.astro";
-
 interface Props {
   phone: string;
   email: string;
@@ -19,29 +17,88 @@ const {
   tertiaryVariant = "secondary",
 } = Astro.props;
 const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
+const iconBaseClass =
+  "inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border p-3 no-underline transition-transform hover:-translate-y-0.5";
+const variants = {
+  primary: "border-accent-strong bg-accent-strong text-white",
+  secondary: "border-accent-strong bg-surface text-accent-strong",
+  light: "border-white bg-white text-accent-strong",
+  outlineLight: "border-white/70 bg-transparent text-white",
+};
 ---
 
-<div class="flex flex-wrap gap-3">
+<div class="flex flex-wrap gap-3" aria-label="Acciones de contacto">
   {
     whatsappHref && (
-      <Button
+      <a
+        class:list={[iconBaseClass, variants[primaryVariant]]}
         href={whatsappHref}
-        variant={primaryVariant}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        title="WhatsApp"
       >
-        WhatsApp
-      </Button>
+        <svg
+          class="h-5 w-5"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5Z" />
+          <path d="M9.2 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3 0 .5-.2.7l-.4.5c.7 1.2 1.6 2.1 2.8 2.7l.5-.4c.2-.2.5-.3.8-.1l1.5.7c.3.1.4.3.4.6v.5c0 .3-.1.6-.4.7-.6.4-1.4.5-2.2.3-2.9-.8-5.2-3-6-6-.2-.7 0-1.5.3-2Z" />
+        </svg>
+      </a>
     )
   }
-  <Button
+  <a
+    class:list={[
+      iconBaseClass,
+      variants[whatsappHref ? secondaryVariant : primaryVariant],
+    ]}
     href={phoneHref}
-    variant={whatsappHref ? secondaryVariant : primaryVariant}>Llamar</Button
+    aria-label="Llamar por teléfono"
+    title="Llamar"
   >
-  <Button
+    <svg
+      class="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <path
+        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.7.6 2.5a2 2 0 0 1-.5 2.1L8 9.5a16 16 0 0 0 6.5 6.5l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.6.5 2.5.6a2 2 0 0 1 1.7 2Z"
+      ></path>
+    </svg>
+  </a>
+  <a
+    class:list={[
+      iconBaseClass,
+      variants[whatsappHref ? tertiaryVariant : secondaryVariant],
+    ]}
     href={`mailto:${email}`}
-    variant={whatsappHref ? tertiaryVariant : secondaryVariant}
+    aria-label="Escribir email"
+    title="Email"
   >
-    Escribir email
-  </Button>
+    <svg
+      class="h-5 w-5"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+      <path d="m22 7-8.9 5.7a2 2 0 0 1-2.2 0L2 7"></path>
+    </svg>
+  </a>
 </div>

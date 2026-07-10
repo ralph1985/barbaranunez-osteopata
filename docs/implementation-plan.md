@@ -153,6 +153,22 @@ Resultado:
 - Cabecera convertida en `sticky` con fondo translúcido, blur y borde inferior.
 - `z-index` ajustado para que la cabecera quede visible sin interferir con el menú lateral.
 
+### Hito 8 - Hero Y Contacto
+
+Estado: completado el 11 de julio de 2026.
+
+Entregable:
+
+- Mostrar la dirección completa de la consulta en la primera pantalla.
+- Ajustar el título principal para que no domine en exceso el hero.
+- Convertir los CTAs de WhatsApp, llamada y email en botones de icono accesibles.
+
+Resultado:
+
+- Dirección normalizada como `C/ Grecia, 9-D, 28880 Meco (Madrid)` a partir de la web actual.
+- Claim del hero acortado y tamaño máximo del H1 reducido.
+- Acciones de contacto representadas con iconos SVG, `aria-label` y `title`.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -167,6 +183,7 @@ Resultado:
 - Movimiento: AnimeJS como dependencia de paquete, con scripts modulares y sin loops infinitos en la V1.
 - Navegación: secciones principales en páginas separadas y menú lateral derecho como navegación principal.
 - Cabecera: acceso al menú siempre visible mediante cabecera sticky.
+- Contacto: WhatsApp, llamada y email se muestran como acciones de icono en la V1.
 
 ## Pendientes De Validar
 
