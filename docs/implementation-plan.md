@@ -102,6 +102,24 @@ Resultado:
 - URL pública configurable con `PUBLIC_SITE_URL`, con valor por defecto `https://www.barbaranunez-osteopata.es`.
 - Configuración base de Vercel añadida para despliegue estático en `dist/`.
 
+### Hito 5 - AnimeJS Y Movimiento
+
+Estado: completado el 10 de julio de 2026.
+
+Entregable:
+
+- Incorporar AnimeJS como dependencia gestionada por pnpm.
+- Añadir un entrypoint de scripts propio para la web pública.
+- Implementar animación de entrada del hero y reveals al hacer scroll.
+- Respetar `prefers-reduced-motion` y evitar animaciones infinitas.
+
+Resultado:
+
+- AnimeJS incorporado como dependencia fija, siguiendo el patrón actual de `../borchgomez`.
+- `src/scripts/site.js` añadido como entrypoint pequeño que delega en módulos.
+- Animación del hero y revelado progresivo de secciones/tarjetas implementados con atributos `data-*`.
+- Las animaciones se desactivan para usuarios con reducción de movimiento.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -113,6 +131,7 @@ Resultado:
 - Servicios: osteopatía estructural, osteopatía craneosacral, técnico masajista deportivo, pilates máquina y pilates mat.
 - CTA principal: WhatsApp/teléfono.
 - Despliegue objetivo: estatico, preparado para Vercel.
+- Movimiento: AnimeJS como dependencia de paquete, con scripts modulares y sin loops infinitos en la V1.
 
 ## Pendientes De Validar
 

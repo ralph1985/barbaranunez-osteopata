@@ -16,7 +16,7 @@ const site = await getSiteContent();
     id="sobre"
     aria-labelledby="about-title"
   >
-    <div class="mx-auto w-page">
+    <div class="mx-auto w-page" data-animate>
       <div
         class="grid grid-cols-[minmax(0,0.9fr)_minmax(320px,0.78fr)] items-start gap-12 max-lg:grid-cols-1"
       >
@@ -35,6 +35,7 @@ const site = await getSiteContent();
       >
         <article
           class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+          data-animate
         >
           <span class="text-sm font-extrabold text-warm">01</span>
           <h3 class="mb-2 mt-3 text-xl font-bold">Escucha clínica</h3>
@@ -45,6 +46,7 @@ const site = await getSiteContent();
         </article>
         <article
           class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+          data-animate
         >
           <span class="text-sm font-extrabold text-warm">02</span>
           <h3 class="mb-2 mt-3 text-xl font-bold">Trabajo manual</h3>
@@ -55,6 +57,7 @@ const site = await getSiteContent();
         </article>
         <article
           class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+          data-animate
         >
           <span class="text-sm font-extrabold text-warm">03</span>
           <h3 class="mb-2 mt-3 text-xl font-bold">Movimiento consciente</h3>
@@ -69,6 +72,7 @@ const site = await getSiteContent();
   <section
     class="mx-auto w-page pb-10 pt-20 max-md:pt-16"
     aria-labelledby="approach-title"
+    data-animate
   >
     <SectionHeader
       eyebrow="Enfoque"

@@ -14,9 +14,12 @@ const { contact } = Astro.props;
   id="contacto"
   aria-labelledby="contact-title"
 >
-  <ContactPanel contact={contact} />
+  <div data-animate>
+    <ContactPanel contact={contact} />
+  </div>
   <div
     class="min-h-64 rounded-md border border-line bg-surface/85 p-5 text-muted shadow-card"
+    data-animate
   >
     <h3 class="mb-3 text-xl font-bold text-ink">Horario</h3>
     <ul class="list-disc space-y-2 pl-5">

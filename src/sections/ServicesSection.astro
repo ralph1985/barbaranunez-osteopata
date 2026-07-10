@@ -15,17 +15,22 @@ const { services } = Astro.props;
   id="servicios"
   aria-labelledby="services-title"
 >
-  <SectionHeader
-    eyebrow="Servicios"
-    id="services-title"
-    title="Tratamientos y clases para cuidar el movimiento"
+  <div data-animate>
+    <SectionHeader
+      eyebrow="Servicios"
+      id="services-title"
+      title="Tratamientos y clases para cuidar el movimiento"
+    >
+      <p>
+        Sesiones orientadas a mejorar movilidad, fuerza, postura y recuperación
+        física desde un trabajo progresivo y adaptado.
+      </p>
+    </SectionHeader>
+  </div>
+  <div
+    class="grid grid-cols-5 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1"
+    data-animate-group
   >
-    <p>
-      Sesiones orientadas a mejorar movilidad, fuerza, postura y recuperación
-      física desde un trabajo progresivo y adaptado.
-    </p>
-  </SectionHeader>
-  <div class="grid grid-cols-5 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
     {services.map((service) => <ServiceCard service={service} />)}
   </div>
 </section>
