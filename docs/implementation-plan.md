@@ -65,6 +65,17 @@ Resultado:
 - CTA principal neutral como llamada telefónica hasta confirmar WhatsApp.
 - Asset placeholder guardado en `public/assets/clinic-placeholder.png`.
 
+### Hito 3.5 - Sistema UI Y Tailwind
+
+Estado: pendiente.
+
+Entregable:
+
+- Incorporar Tailwind al proyecto Astro.
+- Migrar la base visual actual a utilidades y tokens mantenibles sin rediseñar la landing.
+- Extraer componentes UI simples propios para botones, cabeceras de sección, tarjetas de servicio y panel de contacto.
+- Evaluar si hace falta una librería externa de componentes; por defecto, priorizar componentes Astro propios y evitar dependencias innecesarias.
+
 ### Hito 4 - Legal Y Publicacion
 
 Estado: pendiente.
