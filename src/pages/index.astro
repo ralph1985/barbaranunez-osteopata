@@ -10,11 +10,58 @@ const site = await getSiteContent();
 
 <BaseLayout site={site}>
   <HeroSection site={site} />
-  <section class="section section--muted" aria-labelledby="about-title">
+  <section
+    class="section section--muted"
+    id="sobre"
+    aria-labelledby="about-title"
+  >
+    <div class="about-layout">
+      <div class="section__header">
+        <p class="eyebrow">Sobre Bárbara</p>
+        <h2 id="about-title">{site.about.title}</h2>
+      </div>
+      <div class="about-copy">
+        {site.about.body.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+    </div>
+    <div class="about-points" aria-label="Enfoque de trabajo">
+      <article>
+        <span>01</span>
+        <h3>Escucha clínica</h3>
+        <p>
+          Primero se entiende el motivo de consulta y cómo afecta al día a día.
+        </p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Trabajo manual</h3>
+        <p>
+          La sesión se orienta a movilidad, equilibrio corporal y alivio
+          funcional.
+        </p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Movimiento consciente</h3>
+        <p>
+          Pilates ayuda a consolidar fuerza, postura y control de forma
+          progresiva.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section class="section section--intro" aria-labelledby="approach-title">
     <div class="section__header">
-      <p class="eyebrow">Sobre Bárbara</p>
-      <h2 id="about-title">{site.about.title}</h2>
-      {site.about.body.map((paragraph) => <p>{paragraph}</p>)}
+      <p class="eyebrow">Enfoque</p>
+      <h2 id="approach-title">
+        Una consulta enfocada en recuperar confianza al moverte
+      </h2>
+      <p>
+        El punto común entre osteopatía, masaje deportivo y pilates es el
+        movimiento. La nueva web ordena cada servicio alrededor de esa idea:
+        entender qué limita, trabajar sobre el cuerpo y acompañar hábitos que
+        ayuden a sostener la mejora.
+      </p>
     </div>
   </section>
   <ServicesSection services={site.services} />

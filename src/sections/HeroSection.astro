@@ -15,8 +15,24 @@ const { site } = Astro.props;
     <h1>{site.claim}</h1>
     <p>{site.intro}</p>
     <ContactActions phone={site.contact.phone} email={site.contact.email} />
+    <dl class="hero__facts" aria-label="Datos de la consulta">
+      <div>
+        <dt>Ubicación</dt>
+        <dd>{site.contact.city}</dd>
+      </div>
+      <div>
+        <dt>Cita previa</dt>
+        <dd>{site.contact.phone}</dd>
+      </div>
+    </dl>
   </div>
-  <div class="hero__visual" aria-hidden="true">
-    <span></span>
-  </div>
+  <figure class="hero__visual">
+    <img
+      src="/assets/clinic-placeholder.png"
+      width="1586"
+      height="992"
+      alt="Consulta luminosa con camilla y equipo de pilates"
+    />
+    <figcaption>Consulta de osteopatía y pilates en Meco</figcaption>
+  </figure>
 </section>
