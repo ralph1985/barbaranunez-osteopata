@@ -86,13 +86,21 @@ Resultado:
 
 ### Hito 4 - Legal Y Publicacion
 
-Estado: pendiente.
+Estado: completado el 10 de julio de 2026, pendiente de validación legal y dominio definitivo si cambia.
 
 Entregable:
 
 - Paginas legales base revisadas.
 - SEO técnico, metadatos, robots y sitemap ajustados al dominio final.
 - Configuracion de despliegue estatico.
+
+Resultado:
+
+- Páginas legales convertidas en bases revisables con datos pendientes explícitos y sin presentarlas como textos definitivos.
+- Metadatos SEO añadidos al layout: canonical, robots indexables, Open Graph y Twitter Card.
+- `robots.txt` y `sitemap.xml` generados como rutas estáticas.
+- URL pública configurable con `PUBLIC_SITE_URL`, con valor por defecto `https://www.barbaranunez-osteopata.es`.
+- Configuración base de Vercel añadida para despliegue estático en `dist/`.
 
 ## Decisiones Cerradas
 
@@ -108,7 +116,7 @@ Entregable:
 
 ## Pendientes De Validar
 
-- Dominio final y canonical.
+- Confirmar si el dominio público por defecto `https://www.barbaranunez-osteopata.es` se mantiene como dominio final.
 - Permiso de reutilizacion de fotos actuales.
 - Si el número `620 88 89 37` acepta WhatsApp.
 - Si el teléfono fijo `91 113 68 43` debe mantenerse visible.

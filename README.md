@@ -18,6 +18,16 @@ corepack pnpm run lint
 corepack pnpm run build
 ```
 
+## Despliegue
+
+El sitio se genera como estático en `dist/` y está preparado para Vercel. La URL pública se puede ajustar con:
+
+```bash
+PUBLIC_SITE_URL=https://www.barbaranunez-osteopata.es
+```
+
+Ese valor alimenta canonical, Open Graph, `robots.txt` y `sitemap.xml`.
+
 ## Plan
 
 El plan vivo está en [`docs/implementation-plan.md`](docs/implementation-plan.md).

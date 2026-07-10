@@ -16,7 +16,8 @@ Este proyecto es la nueva web profesional de Bárbara Núñez, osteópata, técn
 - La web toma como fuente factual la web actual de Bárbara, pero los textos se reescriben y corrigen.
 - La V1 es estática y usa contenido local, preparada para un CMS futuro sin incluirlo todavía.
 - El CTA principal será cita previa por WhatsApp/teléfono.
-- El dominio final queda pendiente; las URLs canónicas y sitemap deben revisarse antes de publicar.
+- El dominio público por defecto es `https://www.barbaranunez-osteopata.es`; puede ajustarse con `PUBLIC_SITE_URL` si cambia antes de publicar.
+- Los textos legales son bases revisables mientras falten datos completos de titularidad, privacidad y cookies.
 
 ## Validación
 

@@ -6,12 +6,31 @@ import LegalContent from "../../components/ui/LegalContent.astro";
 const site = await getSiteContent();
 ---
 
-<BaseLayout site={site} currentPath="/legal/cookies/">
+<BaseLayout
+  site={site}
+  currentPath="/legal/cookies/"
+  title="Política de cookies"
+  description="Política de cookies de la web de Bárbara Núñez Osteópata."
+>
   <LegalContent title="Política de cookies">
     <p>
-      Texto pendiente de validación. La V1 no debe añadir cookies no necesarias,
-      analytics ni embeds externos sin decidir antes la política
-      correspondiente.
+      La V1 de esta web no incorpora cookies analíticas, publicitarias ni embeds
+      externos que requieran consentimiento previo.
     </p>
+    <section>
+      <h2>Cookies técnicas</h2>
+      <p>
+        La web se publica como sitio estático y no necesita instalar cookies
+        propias para mostrar el contenido principal.
+      </p>
+    </section>
+    <section>
+      <h2>Cambios futuros</h2>
+      <p>
+        Si se añaden analítica, mapas, vídeos, formularios externos o cualquier
+        servicio de terceros, esta página deberá revisarse antes de publicar
+        esos cambios.
+      </p>
+    </section>
   </LegalContent>
 </BaseLayout>
