@@ -2,6 +2,9 @@ import { getAbsoluteUrl } from "../config/site-url";
 
 const pages = [
   "/",
+  "/sobre/",
+  "/servicios/",
+  "/contacto/",
   "/legal/aviso-legal/",
   "/legal/privacidad/",
   "/legal/cookies/",

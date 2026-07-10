@@ -12,3 +12,4 @@ Registro oficial del tiempo comunicado por el usuario para el seguimiento y la f
 | 20260710-003 | 2026-07-10 | Hito 3.5 - Sistema UI y Tailwind     | Tailwind 4, utilidades y componentes UI propios                   |      10 |  0,17 |     Sí     |       |
 | 20260710-004 | 2026-07-10 | Hito 4 - Legal y publicación         | Legales base, SEO técnico, robots, sitemap y configuración Vercel |       5 |  0,08 |     Sí     |       |
 | 20260710-005 | 2026-07-10 | Hito 5 - AnimeJS y movimiento        | Dependencia AnimeJS, entrypoint JS y animaciones accesibles       |      15 |  0,25 |     Sí     |       |
+| 20260710-006 | 2026-07-10 | Hito 6 - Páginas y menú lateral      | Páginas separadas, menú derecho y contacto por WhatsApp           |      20 |  0,33 |     Sí     |       |

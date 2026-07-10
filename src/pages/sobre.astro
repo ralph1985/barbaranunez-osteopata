@@ -1,0 +1,22 @@
+---
+import PageIntro from "../components/ui/PageIntro.astro";
+import { getSiteContent } from "../infrastructure/content/local-site-repository";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import AboutSection from "../sections/AboutSection.astro";
+
+const site = await getSiteContent();
+---
+
+<BaseLayout
+  site={site}
+  currentPath="/sobre/"
+  title="Sobre Bárbara"
+  description="Conoce el enfoque de trabajo de Bárbara Núñez en osteopatía, masaje deportivo y pilates en Meco."
+>
+  <PageIntro
+    eyebrow="Sobre Bárbara"
+    title={site.about.title}
+    description="Una atención cercana y adaptada para mejorar movilidad, equilibrio corporal y hábitos de movimiento."
+  />
+  <AboutSection about={site.about} />
+</BaseLayout>

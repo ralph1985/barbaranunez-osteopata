@@ -19,15 +19,15 @@
     },
     {
       "label": "Sobre Bárbara",
-      "href": "/#sobre"
+      "href": "/sobre/"
     },
     {
       "label": "Servicios",
-      "href": "/#servicios"
+      "href": "/servicios/"
     },
     {
       "label": "Contacto",
-      "href": "/#contacto"
+      "href": "/contacto/"
     }
   ],
   "services": [
@@ -55,6 +55,7 @@
   "contact": {
     "phone": "620 88 89 37",
     "landline": "91 113 68 43",
+    "whatsappHref": "https://wa.me/34620888937",
     "email": "info@barbaranunez-osteopata.es",
     "address": "C/ Grecia, 9-D",
     "city": "28880 Meco, Madrid",

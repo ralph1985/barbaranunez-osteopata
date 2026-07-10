@@ -2,9 +2,11 @@
 interface Props {
   href: string;
   variant?: "primary" | "secondary" | "light" | "outlineLight";
+  target?: "_blank";
+  rel?: string;
 }
 
-const { href, variant = "primary" } = Astro.props;
+const { href, variant = "primary", target, rel } = Astro.props;
 
 const variants = {
   primary:
@@ -23,6 +25,8 @@ const variants = {
     variants[variant],
   ]}
   href={href}
+  target={target}
+  rel={rel}
 >
   <slot />
 </a>

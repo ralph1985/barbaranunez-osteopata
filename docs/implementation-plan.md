@@ -120,6 +120,25 @@ Resultado:
 - Animación del hero y revelado progresivo de secciones/tarjetas implementados con atributos `data-*`.
 - Las animaciones se desactivan para usuarios con reducción de movimiento.
 
+### Hito 6 - Paginas Separadas Y Menu Lateral
+
+Estado: completado el 10 de julio de 2026.
+
+Entregable:
+
+- Convertir las secciones principales en páginas independientes.
+- Sustituir la navegación de cabecera por un menú desplegable lateral desde la derecha.
+- Añadir contacto por WhatsApp siguiendo el patrón de enlace externo usado en `../borchgomez`.
+- Mantener SEO, sitemap y animaciones funcionando con la nueva estructura.
+
+Resultado:
+
+- Nuevas páginas `/sobre/`, `/servicios/` y `/contacto/`.
+- Home reducida a entrada principal con hero y accesos a páginas.
+- Menú lateral derecho con overlay, cierre por botón, enlace, overlay y tecla Escape.
+- WhatsApp añadido como CTA principal de contacto con `wa.me`.
+- Sitemap actualizado con las nuevas rutas.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -132,12 +151,12 @@ Resultado:
 - CTA principal: WhatsApp/teléfono.
 - Despliegue objetivo: estatico, preparado para Vercel.
 - Movimiento: AnimeJS como dependencia de paquete, con scripts modulares y sin loops infinitos en la V1.
+- Navegación: secciones principales en páginas separadas y menú lateral derecho como navegación principal.
 
 ## Pendientes De Validar
 
 - Confirmar si el dominio público por defecto `https://www.barbaranunez-osteopata.es` se mantiene como dominio final.
 - Permiso de reutilizacion de fotos actuales.
-- Si el número `620 88 89 37` acepta WhatsApp.
 - Si el teléfono fijo `91 113 68 43` debe mantenerse visible.
 - Denominación final de osteopatía craneosacral/sacro-craneal.
 - Si la osteopatía visceral debe figurar como servicio independiente.

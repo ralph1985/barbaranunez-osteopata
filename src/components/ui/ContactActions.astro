@@ -4,22 +4,44 @@ import Button from "./Button.astro";
 interface Props {
   phone: string;
   email: string;
+  whatsappHref?: string;
   primaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
   secondaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
+  tertiaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
 }
 
 const {
   phone,
   email,
+  whatsappHref,
   primaryVariant = "primary",
   secondaryVariant = "secondary",
+  tertiaryVariant = "secondary",
 } = Astro.props;
 const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
 ---
 
 <div class="flex flex-wrap gap-3">
-  <Button href={phoneHref} variant={primaryVariant}>Llamar para cita</Button>
-  <Button href={`mailto:${email}`} variant={secondaryVariant}>
+  {
+    whatsappHref && (
+      <Button
+        href={whatsappHref}
+        variant={primaryVariant}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp
+      </Button>
+    )
+  }
+  <Button
+    href={phoneHref}
+    variant={whatsappHref ? secondaryVariant : primaryVariant}>Llamar</Button
+  >
+  <Button
+    href={`mailto:${email}`}
+    variant={whatsappHref ? tertiaryVariant : secondaryVariant}
+  >
     Escribir email
   </Button>
 </div>
