@@ -1,4 +1,6 @@
 ---
+import SectionHeader from "../components/ui/SectionHeader.astro";
+import ServiceCard from "../components/ui/ServiceCard.astro";
 import type { Service } from "../domain/site";
 
 interface Props {
@@ -8,23 +10,22 @@ interface Props {
 const { services } = Astro.props;
 ---
 
-<section class="section" id="servicios" aria-labelledby="services-title">
-  <div class="section__header">
-    <p class="eyebrow">Servicios</p>
-    <h2 id="services-title">Tratamientos y clases para cuidar el movimiento</h2>
+<section
+  class="mx-auto w-page py-20 max-md:py-16"
+  id="servicios"
+  aria-labelledby="services-title"
+>
+  <SectionHeader
+    eyebrow="Servicios"
+    id="services-title"
+    title="Tratamientos y clases para cuidar el movimiento"
+  >
     <p>
       Sesiones orientadas a mejorar movilidad, fuerza, postura y recuperación
       física desde un trabajo progresivo y adaptado.
     </p>
-  </div>
-  <div class="services-grid">
-    {
-      services.map((service) => (
-        <article class="service-card">
-          <h3>{service.title}</h3>
-          <p>{service.summary}</p>
-        </article>
-      ))
-    }
+  </SectionHeader>
+  <div class="grid grid-cols-5 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1">
+    {services.map((service) => <ServiceCard service={service} />)}
   </div>
 </section>

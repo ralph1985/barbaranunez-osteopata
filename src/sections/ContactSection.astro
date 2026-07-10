@@ -1,5 +1,5 @@
 ---
-import ContactActions from "../components/ui/ContactActions.astro";
+import ContactPanel from "../components/ui/ContactPanel.astro";
 import type { ContactInfo } from "../domain/site";
 
 interface Props {
@@ -9,33 +9,17 @@ interface Props {
 const { contact } = Astro.props;
 ---
 
-<section class="section contact" id="contacto" aria-labelledby="contact-title">
-  <div>
-    <p class="eyebrow">Contacto</p>
-    <h2 id="contact-title">Cita previa y ubicación</h2>
-    <p>{contact.address}</p>
-    <p>{contact.city}</p>
-    <p>
-      <a href={`tel:${contact.phone.replace(/\s+/g, "")}`}>{contact.phone}</a>
-      {
-        contact.landline && (
-          <>
-            {" / "}
-            <a href={`tel:${contact.landline.replace(/\s+/g, "")}`}>
-              {contact.landline}
-            </a>
-          </>
-        )
-      }
-    </p>
-    <p>
-      <a href={`mailto:${contact.email}`}>{contact.email}</a>
-    </p>
-    <ContactActions phone={contact.phone} email={contact.email} />
-  </div>
-  <div class="contact__hours">
-    <h3>Horario</h3>
-    <ul>
+<section
+  class="mx-auto grid w-page grid-cols-[minmax(0,1fr)_minmax(320px,0.72fr)] items-start gap-8 py-20 max-lg:grid-cols-1 max-md:py-16"
+  id="contacto"
+  aria-labelledby="contact-title"
+>
+  <ContactPanel contact={contact} />
+  <div
+    class="min-h-64 rounded-md border border-line bg-surface/85 p-5 text-muted shadow-card"
+  >
+    <h3 class="mb-3 text-xl font-bold text-ink">Horario</h3>
+    <ul class="list-disc space-y-2 pl-5">
       {contact.hours.map((hour) => <li>{hour}</li>)}
     </ul>
   </div>

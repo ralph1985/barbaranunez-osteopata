@@ -1,6 +1,6 @@
 ---
 import type { SiteContent } from "../domain/site";
-import "../styles/main.css";
+import "../styles/global.css";
 
 interface Props {
   site: SiteContent;
@@ -20,18 +20,21 @@ const { site, currentPath = "/" } = Astro.props;
     <title>{site.title}</title>
   </head>
   <body>
-    <header class="site-header">
+    <header
+      class="mx-auto flex w-page items-center justify-between gap-6 py-4 max-md:flex-col max-md:items-start"
+    >
       <a
-        class="site-header__brand"
+        class="font-bold text-accent-strong no-underline"
         href="/"
         aria-current={currentPath === "/" ? "page" : undefined}
       >
         {site.businessName}
       </a>
-      <nav class="site-header__nav" aria-label="Navegacion principal">
+      <nav class="flex flex-wrap gap-3" aria-label="Navegacion principal">
         {
           site.nav.map((item) => (
             <a
+              class="text-[0.95rem] text-muted no-underline hover:text-accent-strong"
               href={item.href}
               aria-current={currentPath === item.href ? "page" : undefined}
             >
@@ -44,12 +47,23 @@ const { site, currentPath = "/" } = Astro.props;
     <main>
       <slot />
     </main>
-    <footer class="site-footer">
+    <footer
+      class="mx-auto flex w-page items-center justify-between gap-6 border-t border-line py-4 text-muted max-md:flex-col max-md:items-start"
+    >
       <p>{site.businessName} - Osteopatía y pilates en Meco.</p>
-      <nav aria-label="Legal">
-        <a href="/legal/aviso-legal/">Aviso legal</a>
-        <a href="/legal/privacidad/">Privacidad</a>
-        <a href="/legal/cookies/">Cookies</a>
+      <nav class="flex flex-wrap gap-3" aria-label="Legal">
+        <a
+          class="text-[0.95rem] no-underline hover:text-accent-strong"
+          href="/legal/aviso-legal/">Aviso legal</a
+        >
+        <a
+          class="text-[0.95rem] no-underline hover:text-accent-strong"
+          href="/legal/privacidad/">Privacidad</a
+        >
+        <a
+          class="text-[0.95rem] no-underline hover:text-accent-strong"
+          href="/legal/cookies/">Cookies</a
+        >
       </nav>
     </footer>
   </body>

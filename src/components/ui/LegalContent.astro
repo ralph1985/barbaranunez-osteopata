@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<section class="mx-auto min-h-[56vh] w-page py-20 max-md:py-16">
+  <p
+    class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
+  >
+    Legal
+  </p>
+  <h1 class="m-0 text-[clamp(2rem,4.6vw,3.7rem)] leading-[1.05] font-bold">
+    {title}
+  </h1>
+  <div class="mt-5 max-w-2xl text-lg text-muted">
+    <slot />
+  </div>
+</section>
