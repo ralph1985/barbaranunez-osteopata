@@ -10,10 +10,16 @@ export interface Service {
 
 export interface ContactInfo {
   phone: string;
+  landline?: string;
   email: string;
   address: string;
   city: string;
   hours: string[];
+}
+
+export interface AboutContent {
+  title: string;
+  body: string[];
 }
 
 export interface SiteContent {
@@ -23,6 +29,7 @@ export interface SiteContent {
   businessName: string;
   claim: string;
   intro: string;
+  about: AboutContent;
   nav: NavItem[];
   services: Service[];
   contact: ContactInfo;

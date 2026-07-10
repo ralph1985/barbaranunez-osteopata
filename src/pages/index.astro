@@ -13,11 +13,8 @@ const site = await getSiteContent();
   <section class="section section--muted" aria-labelledby="about-title">
     <div class="section__header">
       <p class="eyebrow">Sobre Bárbara</p>
-      <h2 id="about-title">Contenido pendiente de redacción final</h2>
-      <p>
-        Este hito deja preparada la estructura. La biografia profesional se
-        redactara despues de inventariar y revisar el contenido actual.
-      </p>
+      <h2 id="about-title">{site.about.title}</h2>
+      {site.about.body.map((paragraph) => <p>{paragraph}</p>)}
     </div>
   </section>
   <ServicesSection services={site.services} />

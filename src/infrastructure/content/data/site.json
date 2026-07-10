@@ -1,10 +1,17 @@
 {
   "lang": "es",
   "title": "Bárbara Núñez Osteópata",
-  "description": "Nueva web profesional para consulta de osteopatía, masaje deportivo y pilates en Meco.",
+  "description": "Consulta de osteopatía, masaje deportivo y pilates en Meco, Madrid.",
   "businessName": "Bárbara Núñez",
-  "claim": "Osteopatía y pilates para recuperar movimiento, equilibrio y bienestar.",
-  "intro": "Primera base técnica de la nueva web. El contenido definitivo se reescribirá en el siguiente hito a partir de la web actual.",
+  "claim": "Osteopatía y pilates para moverte mejor y cuidar tu bienestar.",
+  "intro": "Consulta en Meco con sesiones de osteopatía, masaje deportivo y pilates orientadas a mejorar movilidad, equilibrio corporal y calidad de vida.",
+  "about": {
+    "title": "Atención personalizada en osteopatía y Método Pilates",
+    "body": [
+      "Bárbara Núñez combina la práctica osteopática con la enseñanza del Método Pilates para acompañar procesos de mejora física desde una mirada integral.",
+      "El trabajo se adapta a las necesidades de cada persona, con foco en movilidad, vitalidad, equilibrio y hábitos de movimiento sostenibles."
+    ]
+  },
   "nav": [
     {
       "label": "Inicio",
@@ -22,27 +29,28 @@
   "services": [
     {
       "title": "Osteopatía estructural",
-      "summary": "Servicio pendiente de redacción final."
+      "summary": "Trabajo manual dirigido a molestias musculares, articulares, tendinosas y ligamentosas, buscando el origen de la disfunción y no solo el síntoma."
     },
     {
       "title": "Osteopatía craneosacral",
-      "summary": "Servicio pendiente de redacción final."
+      "summary": "Enfoque osteopático centrado en la relación entre el sistema craneal y el sacro para detectar y corregir disfunciones."
     },
     {
       "title": "Técnico masajista deportivo",
-      "summary": "Servicio pendiente de redacción final."
+      "summary": "Masaje específico para musculatura sometida a carga deportiva, útil en mantenimiento, preparación para competición y recuperación posterior."
     },
     {
       "title": "Pilates máquina",
-      "summary": "Servicio pendiente de redacción final."
+      "summary": "Ejercicio con máquinas de resistencia ajustable para fortalecer el cuerpo, mejorar movilidad, control postural y coordinación."
     },
     {
       "title": "Pilates mat",
-      "summary": "Servicio pendiente de redacción final."
+      "summary": "Pilates en suelo con el peso corporal como resistencia, enfocado en fuerza, flexibilidad, postura, core y conciencia corporal."
     }
   ],
   "contact": {
     "phone": "620 88 89 37",
+    "landline": "91 113 68 43",
     "email": "info@barbaranunez-osteopata.es",
     "address": "C/ Grecia, 9-D",
     "city": "28880 Meco, Madrid",
