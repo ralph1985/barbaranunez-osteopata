@@ -50,13 +50,20 @@ Resultado:
 
 ### Hito 3 - Diseno Landing
 
-Estado: pendiente.
+Estado: completado el 10 de julio de 2026, pendiente de revisión visual.
 
 Entregable:
 
 - Dirección visual clínica, cálida y completamente nueva.
 - Secciones responsive y CTA claro de cita previa.
 - Placeholders de imagen listos para sustituir por fotos autorizadas.
+
+Resultado:
+
+- Dirección visual aplicada a la landing con hero fotográfico generado, sin reutilizar fotos de la web actual.
+- Secciones reorganizadas para hero, sobre Bárbara, enfoque, servicios y contacto.
+- CTA principal neutral como llamada telefónica hasta confirmar WhatsApp.
+- Asset placeholder guardado en `public/assets/clinic-placeholder.png`.
 
 ### Hito 4 - Legal Y Publicacion
 
