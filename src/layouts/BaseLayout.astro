@@ -43,41 +43,45 @@ const socialImageUrl = getAbsoluteUrl("/assets/clinic-placeholder.png");
     <title>{pageTitle}</title>
   </head>
   <body class="overflow-x-hidden">
-    <header class="mx-auto flex w-page items-center justify-between gap-6 py-4">
-      <a
-        class="font-bold text-accent-strong no-underline"
-        href="/"
-        aria-current={currentPath === "/" ? "page" : undefined}
-      >
-        {site.businessName}
-      </a>
-      <nav class="hidden" aria-label="Navegacion principal">
-        {
-          site.nav.map((item) => (
-            <a
-              class="text-[0.95rem] text-muted no-underline hover:text-accent-strong"
-              href={item.href}
-              aria-current={currentPath === item.href ? "page" : undefined}
-            >
-              {item.label}
-            </a>
-          ))
-        }
-      </nav>
-      <button
-        class="inline-flex min-h-11 items-center gap-3 rounded-md border border-line bg-surface px-4 py-2 font-bold text-accent-strong shadow-card"
-        type="button"
-        aria-controls="site-menu"
-        aria-expanded="false"
-        data-menu-open
-      >
-        <span>Menú</span>
-        <span class="grid gap-1" aria-hidden="true">
-          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
-          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
-          <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
-        </span>
-      </button>
+    <header
+      class="sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-md"
+    >
+      <div class="mx-auto flex w-page items-center justify-between gap-6 py-3">
+        <a
+          class="font-bold text-accent-strong no-underline"
+          href="/"
+          aria-current={currentPath === "/" ? "page" : undefined}
+        >
+          {site.businessName}
+        </a>
+        <nav class="hidden" aria-label="Navegacion principal">
+          {
+            site.nav.map((item) => (
+              <a
+                class="text-[0.95rem] text-muted no-underline hover:text-accent-strong"
+                href={item.href}
+                aria-current={currentPath === item.href ? "page" : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+        </nav>
+        <button
+          class="inline-flex min-h-11 items-center gap-3 rounded-md border border-line bg-surface px-4 py-2 font-bold text-accent-strong shadow-card"
+          type="button"
+          aria-controls="site-menu"
+          aria-expanded="false"
+          data-menu-open
+        >
+          <span>Menú</span>
+          <span class="grid gap-1" aria-hidden="true">
+            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+          </span>
+        </button>
+      </div>
     </header>
     <div
       class="fixed inset-0 z-40 hidden bg-ink/40 opacity-0 transition-opacity"

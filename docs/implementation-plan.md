@@ -139,6 +139,20 @@ Resultado:
 - WhatsApp añadido como CTA principal de contacto con `wa.me`.
 - Sitemap actualizado con las nuevas rutas.
 
+### Hito 7 - Cabecera Persistente
+
+Estado: completado el 10 de julio de 2026.
+
+Entregable:
+
+- Mantener visible la cabecera con acceso al menú durante el scroll.
+- Conservar la jerarquía visual del menú lateral y overlay.
+
+Resultado:
+
+- Cabecera convertida en `sticky` con fondo translúcido, blur y borde inferior.
+- `z-index` ajustado para que la cabecera quede visible sin interferir con el menú lateral.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -152,6 +166,7 @@ Resultado:
 - Despliegue objetivo: estatico, preparado para Vercel.
 - Movimiento: AnimeJS como dependencia de paquete, con scripts modulares y sin loops infinitos en la V1.
 - Navegación: secciones principales en páginas separadas y menú lateral derecho como navegación principal.
+- Cabecera: acceso al menú siempre visible mediante cabecera sticky.
 
 ## Pendientes De Validar
 
