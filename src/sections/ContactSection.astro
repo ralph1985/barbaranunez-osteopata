@@ -16,12 +16,25 @@ const { contact } = Astro.props;
     <p>{contact.address}</p>
     <p>{contact.city}</p>
     <p>
+      <a href={`tel:${contact.phone.replace(/\s+/g, "")}`}>{contact.phone}</a>
+      {
+        contact.landline && (
+          <>
+            {" / "}
+            <a href={`tel:${contact.landline.replace(/\s+/g, "")}`}>
+              {contact.landline}
+            </a>
+          </>
+        )
+      }
+    </p>
+    <p>
       <a href={`mailto:${contact.email}`}>{contact.email}</a>
     </p>
     <ContactActions phone={contact.phone} email={contact.email} />
   </div>
   <div class="contact__hours">
-    <h3>Horario actual a verificar</h3>
+    <h3>Horario</h3>
     <ul>
       {contact.hours.map((hour) => <li>{hour}</li>)}
     </ul>

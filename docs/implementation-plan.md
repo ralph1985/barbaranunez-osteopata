@@ -34,13 +34,19 @@ Resultado:
 
 ### Hito 2 - Inventario Y Contenido
 
-Estado: pendiente.
+Estado: completado el 10 de julio de 2026, pendiente de revisión de datos abiertos.
 
 Entregable:
 
 - Extraer contenido factual de la web actual.
 - Redactar copia nueva para hero, sobre mí, servicios, ubicación y contacto.
 - Separar datos verificados de datos pendientes.
+
+Resultado:
+
+- Inventario documentado en `docs/content-inventory.md`.
+- Copy inicial aplicado a la landing desde `src/infrastructure/content/data/site.json`.
+- Datos pendientes separados para revisión antes de diseño final, legal y publicación.
 
 ### Hito 3 - Diseno Landing
 
@@ -79,5 +85,8 @@ Entregable:
 - Dominio final y canonical.
 - Permiso de reutilizacion de fotos actuales.
 - Si el número `620 88 89 37` acepta WhatsApp.
+- Si el teléfono fijo `91 113 68 43` debe mantenerse visible.
+- Denominación final de osteopatía craneosacral/sacro-craneal.
+- Si la osteopatía visceral debe figurar como servicio independiente.
 - Datos legales completos.
 - Texto final de política de privacidad y cookies.
