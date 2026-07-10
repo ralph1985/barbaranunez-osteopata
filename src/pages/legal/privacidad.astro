@@ -1,18 +1,17 @@
 ---
 import { getSiteContent } from "../../infrastructure/content/local-site-repository";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import LegalContent from "../../components/ui/LegalContent.astro";
 
 const site = await getSiteContent();
 ---
 
 <BaseLayout site={site} currentPath="/legal/privacidad/">
-  <section class="section legal-page">
-    <p class="eyebrow">Legal</p>
-    <h1>Política de privacidad</h1>
+  <LegalContent title="Política de privacidad">
     <p>
       Texto pendiente de validación. No publicar como definitivo hasta confirmar
       responsable del tratamiento, finalidad, base legal, conservación y
       derechos.
     </p>
-  </section>
+  </LegalContent>
 </BaseLayout>

@@ -1,15 +1,25 @@
 ---
+import Button from "./Button.astro";
+
 interface Props {
   phone: string;
   email: string;
+  primaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
+  secondaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
 }
 
-const { phone, email } = Astro.props;
+const {
+  phone,
+  email,
+  primaryVariant = "primary",
+  secondaryVariant = "secondary",
+} = Astro.props;
 const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
 ---
 
-<div class="contact-actions">
-  <a class="button button--primary" href={phoneHref}>Llamar para cita</a>
-  <a class="button button--secondary" href={`mailto:${email}`}>Escribir email</a
-  >
+<div class="flex flex-wrap gap-3">
+  <Button href={phoneHref} variant={primaryVariant}>Llamar para cita</Button>
+  <Button href={`mailto:${email}`} variant={secondaryVariant}>
+    Escribir email
+  </Button>
 </div>

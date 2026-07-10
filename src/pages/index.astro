@@ -1,4 +1,5 @@
 ---
+import SectionHeader from "../components/ui/SectionHeader.astro";
 import { getSiteContent } from "../infrastructure/content/local-site-repository";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContactSection from "../sections/ContactSection.astro";
@@ -11,58 +12,76 @@ const site = await getSiteContent();
 <BaseLayout site={site}>
   <HeroSection site={site} />
   <section
-    class="section section--muted"
+    class="border-y border-line bg-[linear-gradient(90deg,rgba(232,239,230,0.86),rgba(242,223,207,0.52))] py-20 max-md:py-16"
     id="sobre"
     aria-labelledby="about-title"
   >
-    <div class="about-layout">
-      <div class="section__header">
-        <p class="eyebrow">Sobre Bárbara</p>
-        <h2 id="about-title">{site.about.title}</h2>
+    <div class="mx-auto w-page">
+      <div
+        class="grid grid-cols-[minmax(0,0.9fr)_minmax(320px,0.78fr)] items-start gap-12 max-lg:grid-cols-1"
+      >
+        <SectionHeader
+          eyebrow="Sobre Bárbara"
+          id="about-title"
+          title={site.about.title}
+        />
+        <div class="max-w-2xl space-y-4 text-lg text-muted">
+          {site.about.body.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
       </div>
-      <div class="about-copy">
-        {site.about.body.map((paragraph) => <p>{paragraph}</p>)}
+      <div
+        class="mt-10 grid grid-cols-3 gap-4 max-md:grid-cols-1"
+        aria-label="Enfoque de trabajo"
+      >
+        <article
+          class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+        >
+          <span class="text-sm font-extrabold text-warm">01</span>
+          <h3 class="mb-2 mt-3 text-xl font-bold">Escucha clínica</h3>
+          <p class="m-0 text-muted">
+            Primero se entiende el motivo de consulta y cómo afecta al día a
+            día.
+          </p>
+        </article>
+        <article
+          class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+        >
+          <span class="text-sm font-extrabold text-warm">02</span>
+          <h3 class="mb-2 mt-3 text-xl font-bold">Trabajo manual</h3>
+          <p class="m-0 text-muted">
+            La sesión se orienta a movilidad, equilibrio corporal y alivio
+            funcional.
+          </p>
+        </article>
+        <article
+          class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
+        >
+          <span class="text-sm font-extrabold text-warm">03</span>
+          <h3 class="mb-2 mt-3 text-xl font-bold">Movimiento consciente</h3>
+          <p class="m-0 text-muted">
+            Pilates ayuda a consolidar fuerza, postura y control de forma
+            progresiva.
+          </p>
+        </article>
       </div>
-    </div>
-    <div class="about-points" aria-label="Enfoque de trabajo">
-      <article>
-        <span>01</span>
-        <h3>Escucha clínica</h3>
-        <p>
-          Primero se entiende el motivo de consulta y cómo afecta al día a día.
-        </p>
-      </article>
-      <article>
-        <span>02</span>
-        <h3>Trabajo manual</h3>
-        <p>
-          La sesión se orienta a movilidad, equilibrio corporal y alivio
-          funcional.
-        </p>
-      </article>
-      <article>
-        <span>03</span>
-        <h3>Movimiento consciente</h3>
-        <p>
-          Pilates ayuda a consolidar fuerza, postura y control de forma
-          progresiva.
-        </p>
-      </article>
     </div>
   </section>
-  <section class="section section--intro" aria-labelledby="approach-title">
-    <div class="section__header">
-      <p class="eyebrow">Enfoque</p>
-      <h2 id="approach-title">
-        Una consulta enfocada en recuperar confianza al moverte
-      </h2>
+  <section
+    class="mx-auto w-page pb-10 pt-20 max-md:pt-16"
+    aria-labelledby="approach-title"
+  >
+    <SectionHeader
+      eyebrow="Enfoque"
+      id="approach-title"
+      title="Una consulta enfocada en recuperar confianza al moverte"
+    >
       <p>
         El punto común entre osteopatía, masaje deportivo y pilates es el
         movimiento. La nueva web ordena cada servicio alrededor de esa idea:
         entender qué limita, trabajar sobre el cuerpo y acompañar hábitos que
         ayuden a sostener la mejora.
       </p>
-    </div>
+    </SectionHeader>
   </section>
   <ServicesSection services={site.services} />
   <ContactSection contact={site.contact} />

@@ -9,30 +9,50 @@ interface Props {
 const { site } = Astro.props;
 ---
 
-<section class="hero">
-  <div class="hero__content">
-    <p class="eyebrow">Osteopatía - Pilates - Masaje deportivo</p>
-    <h1>{site.claim}</h1>
-    <p>{site.intro}</p>
+<section
+  class="mx-auto grid min-h-[calc(100vh-5.3rem)] w-page grid-cols-[minmax(0,0.92fr)_minmax(420px,1.08fr)] items-center gap-14 py-14 max-lg:min-h-0 max-lg:grid-cols-1 max-md:py-10"
+>
+  <div class="space-y-6">
+    <p
+      class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
+    >
+      Osteopatía - Pilates - Masaje deportivo
+    </p>
+    <h1
+      class="m-0 max-w-3xl text-[clamp(3.1rem,7.2vw,6.1rem)] leading-[1.05] font-bold tracking-normal max-md:text-[clamp(2.55rem,14vw,4rem)]"
+    >
+      {site.claim}
+    </h1>
+    <p class="max-w-2xl text-lg text-muted">{site.intro}</p>
     <ContactActions phone={site.contact.phone} email={site.contact.email} />
-    <dl class="hero__facts" aria-label="Datos de la consulta">
-      <div>
-        <dt>Ubicación</dt>
-        <dd>{site.contact.city}</dd>
+    <dl
+      class="grid max-w-xl grid-cols-2 gap-3 max-md:grid-cols-1"
+      aria-label="Datos de la consulta"
+    >
+      <div class="rounded-md border border-line bg-surface/75 p-4">
+        <dt class="text-xs font-extrabold text-muted uppercase">Ubicación</dt>
+        <dd class="mt-1 font-bold">{site.contact.city}</dd>
       </div>
-      <div>
-        <dt>Cita previa</dt>
-        <dd>{site.contact.phone}</dd>
+      <div class="rounded-md border border-line bg-surface/75 p-4">
+        <dt class="text-xs font-extrabold text-muted uppercase">Cita previa</dt>
+        <dd class="mt-1 font-bold">{site.contact.phone}</dd>
       </div>
     </dl>
   </div>
-  <figure class="hero__visual">
+  <figure
+    class="relative m-0 aspect-[16/10] overflow-hidden rounded-md border border-line bg-surface shadow-soft"
+  >
     <img
+      class="h-full w-full object-cover"
       src="/assets/clinic-placeholder.png"
       width="1586"
       height="992"
       alt="Consulta luminosa con camilla y equipo de pilates"
     />
-    <figcaption>Consulta de osteopatía y pilates en Meco</figcaption>
+    <figcaption
+      class="absolute right-4 bottom-4 max-w-[calc(100%-2rem)] rounded-md border border-white/50 bg-ink/60 px-3 py-2 text-sm text-white backdrop-blur-md max-md:static max-md:max-w-none max-md:border-0 max-md:bg-surface max-md:text-ink max-md:backdrop-blur-none"
+    >
+      Consulta de osteopatía y pilates en Meco
+    </figcaption>
   </figure>
 </section>

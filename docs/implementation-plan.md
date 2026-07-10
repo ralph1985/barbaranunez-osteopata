@@ -67,7 +67,7 @@ Resultado:
 
 ### Hito 3.5 - Sistema UI Y Tailwind
 
-Estado: pendiente.
+Estado: completado el 10 de julio de 2026.
 
 Entregable:
 
@@ -75,6 +75,14 @@ Entregable:
 - Migrar la base visual actual a utilidades y tokens mantenibles sin rediseñar la landing.
 - Extraer componentes UI simples propios para botones, cabeceras de sección, tarjetas de servicio y panel de contacto.
 - Evaluar si hace falta una librería externa de componentes; por defecto, priorizar componentes Astro propios y evitar dependencias innecesarias.
+
+Resultado:
+
+- Tailwind 4 incorporado mediante el plugin oficial de Vite.
+- Tokens de diseño definidos en `src/styles/global.css`.
+- CSS global anterior sustituido por utilidades Tailwind y componentes Astro propios.
+- Componentes UI propios añadidos para botones, cabeceras de sección, tarjetas, panel de contacto y contenido legal.
+- No se añadió una librería externa de componentes porque la landing no la necesita todavía.
 
 ### Hito 4 - Legal Y Publicacion
 

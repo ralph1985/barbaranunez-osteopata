@@ -1,0 +1,31 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  id?: string;
+}
+
+const { eyebrow, title, id } = Astro.props;
+const hasDescription = Astro.slots.has("default");
+---
+
+<div class="mb-8">
+  <p
+    class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
+  >
+    {eyebrow}
+  </p>
+  <h2
+    class="max-w-3xl text-[clamp(2rem,4.6vw,3.7rem)] leading-[1.05] font-bold tracking-normal"
+    id={id}
+  >
+    {title}
+  </h2>
+  {
+    hasDescription && (
+      <div class="mt-5 max-w-2xl text-lg text-muted">
+        <slot />
+      </div>
+    )
+  }
+</div>
