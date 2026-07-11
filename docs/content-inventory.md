@@ -54,6 +54,13 @@ La primera copia revisable está en `src/infrastructure/content/data/site.json` 
 - Servicios.
 - Ubicación y contacto.
 
+## Fotos Pendientes
+
+La web no usa fotos de stock ni reutiliza fotos de la web actual sin permiso.
+Los huecos visuales de la home y la pagina "Sobre Barbara" estan preparados con
+placeholders sobrios. La guia de fotos para sustituirlos esta en
+`docs/photo-guide.md`.
+
 ## Datos Pendientes
 
 - Confirmar si el móvil `620 88 89 37` acepta WhatsApp para usarlo como CTA principal.
