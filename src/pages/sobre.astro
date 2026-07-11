@@ -10,13 +10,13 @@ const site = await getSiteContent();
 <BaseLayout
   site={site}
   currentPath="/sobre/"
-  title="Sobre Bárbara"
-  description="Conoce el enfoque de trabajo de Bárbara Núñez en osteopatía, masaje deportivo y pilates en Meco."
+  title={site.pages.about.metaTitle}
+  description={site.pages.about.metaDescription}
 >
   <PageIntro
-    eyebrow="Sobre Bárbara"
-    title={site.about.title}
-    description="Una atención cercana y adaptada para mejorar movilidad, equilibrio corporal y hábitos de movimiento."
+    eyebrow={site.pages.about.eyebrow}
+    title={site.pages.about.title}
+    description={site.pages.about.description}
   />
   <AboutSection about={site.about} />
 </BaseLayout>

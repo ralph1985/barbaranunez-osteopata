@@ -10,13 +10,13 @@ const site = await getSiteContent();
 <BaseLayout
   site={site}
   currentPath="/servicios/"
-  title="Servicios"
-  description="Servicios de osteopatía estructural, osteopatía craneosacral, masaje deportivo, pilates máquina y pilates mat en Meco."
+  title={site.pages.services.metaTitle}
+  description={site.pages.services.metaDescription}
 >
   <PageIntro
-    eyebrow="Servicios"
-    title="Osteopatía, masaje deportivo y pilates"
-    description="Tratamientos y clases para mejorar movilidad, postura, fuerza y recuperación física desde un trabajo progresivo."
+    eyebrow={site.pages.services.eyebrow}
+    title={site.pages.services.title}
+    description={site.pages.services.description}
   />
-  <ServicesSection services={site.services} />
+  <ServicesSection intro={site.servicesIntro} services={site.services} />
 </BaseLayout>

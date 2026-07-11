@@ -10,13 +10,13 @@ const site = await getSiteContent();
 <BaseLayout
   site={site}
   currentPath="/contacto/"
-  title="Contacto"
-  description="Contacto, WhatsApp, teléfono, email, dirección y horario de la consulta de Bárbara Núñez en Meco."
+  title={site.pages.contact.metaTitle}
+  description={site.pages.contact.metaDescription}
 >
   <PageIntro
-    eyebrow="Contacto"
-    title="Cita previa y ubicación"
-    description="Contacta por WhatsApp, teléfono o email para pedir cita en la consulta de Meco."
+    eyebrow={site.pages.contact.eyebrow}
+    title={site.pages.contact.title}
+    description={site.pages.contact.description}
   />
   <ContactSection contact={site.contact} />
 </BaseLayout>

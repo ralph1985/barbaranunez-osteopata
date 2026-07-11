@@ -47,12 +47,18 @@ La web actual lo describe como pilates en suelo con el peso corporal como resist
 
 ## Redacción Nueva Aplicada
 
-La primera copia revisable está en `src/infrastructure/content/data/site.json` y cubre:
+La copia revisable está en `src/infrastructure/content/data/site.json`, con tono cercano y claro, y cubre:
 
 - Hero.
 - Sobre Bárbara.
+- Tarjetas de navegación de la home.
+- Intros de páginas.
 - Servicios.
+- Enfoque de trabajo.
 - Ubicación y contacto.
+- Footer.
+
+Las páginas legales siguen siendo bases revisables. Se han ajustado para mejorar claridad, pero no sustituyen una validación legal con datos completos de titularidad, privacidad y cookies.
 
 ## Datos Pendientes
 

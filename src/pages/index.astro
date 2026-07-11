@@ -4,29 +4,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../sections/HeroSection.astro";
 
 const site = await getSiteContent();
-const homeCards = [
-  {
-    href: "/sobre/",
-    eyebrow: "Sobre Bárbara",
-    title: "Atención personalizada",
-    summary:
-      "Conoce el enfoque de trabajo y la forma de acompañar cada proceso.",
-  },
-  {
-    href: "/servicios/",
-    eyebrow: "Servicios",
-    title: "Osteopatía, masaje y pilates",
-    summary:
-      "Consulta los tratamientos y clases disponibles para cuidar el movimiento.",
-  },
-  {
-    href: "/contacto/",
-    eyebrow: "Contacto",
-    title: "Cita previa",
-    summary:
-      "Accede a WhatsApp, teléfono, email, dirección y horario de la consulta.",
-  },
-];
 ---
 
 <BaseLayout site={site}>
@@ -39,7 +16,7 @@ const homeCards = [
       <h2 id="home-pages-title" class="sr-only">Secciones principales</h2>
       <div class="grid grid-cols-3 gap-4 max-lg:grid-cols-1" data-animate-group>
         {
-          homeCards.map((card) => (
+          site.homeCards.map((card) => (
             <a
               class="min-h-56 rounded-md border border-line bg-surface/90 p-5 text-ink no-underline shadow-card transition-transform hover:-translate-y-1 hover:border-accent-strong"
               href={card.href}
