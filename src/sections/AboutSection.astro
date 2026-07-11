@@ -1,4 +1,5 @@
 ---
+import PhotoPlaceholder from "../components/ui/PhotoPlaceholder.astro";
 import SectionHeader from "../components/ui/SectionHeader.astro";
 import type { AboutContent } from "../domain/site";
 
@@ -25,6 +26,22 @@ const { about } = Astro.props;
       <div class="max-w-2xl space-y-4 text-lg text-muted">
         {about.body.map((paragraph) => <p>{paragraph}</p>)}
       </div>
+    </div>
+    <div
+      class="mt-10 grid grid-cols-[minmax(0,0.74fr)_minmax(280px,0.36fr)] gap-4 max-lg:grid-cols-1"
+    >
+      <PhotoPlaceholder
+        eyebrow="Foto de consulta pendiente"
+        title="Espacio para mostrar el entorno de trabajo"
+        description="Aquí irá una foto amplia y tranquila de la consulta, la camilla o el material de pilates."
+        aspectClass="aspect-[16/7] max-md:aspect-[4/3]"
+      />
+      <PhotoPlaceholder
+        eyebrow="Retrato pendiente"
+        title="Bárbara Núñez"
+        description="Hueco reservado para un retrato profesional cercano, con fondo limpio y luz natural."
+        aspectClass="aspect-[4/5]"
+      />
     </div>
     <div
       class="mt-10 grid grid-cols-3 gap-4 max-md:grid-cols-1"
