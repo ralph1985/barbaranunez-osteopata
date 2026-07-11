@@ -63,7 +63,7 @@ Resultado:
 - Dirección visual aplicada a la landing con hero fotográfico generado, sin reutilizar fotos de la web actual.
 - Secciones reorganizadas para hero, sobre Bárbara, enfoque, servicios y contacto.
 - CTA principal neutral como llamada telefónica hasta confirmar WhatsApp.
-- Asset placeholder guardado en `public/assets/clinic-placeholder.png`.
+- Placeholder fotográfico inicial retirado en el Hito 10 para evitar usar fotos falsas.
 
 ### Hito 3.5 - Sistema UI Y Tailwind
 
@@ -185,6 +185,22 @@ Resultado:
 - `docs/agents-plan.md` activa el agente de ahorro de tokens con responsabilidades concretas.
 - La regla de usar `gh` fuera del sandbox queda explícita para futuros PRs.
 
+### Hito 10 - Placeholders Y Guia De Fotos
+
+Estado: completado el 11 de julio de 2026.
+
+Entregable:
+
+- Preparar huecos visuales para fotos reales sin usar stock ni fotos falsas.
+- Documentar que fotos debe aportar Barbara para sustituir los placeholders.
+- Mantener los huecos integrados en el diseño responsive.
+
+Resultado:
+
+- Componente visual reutilizable para fotos pendientes.
+- Hero y pagina "Sobre Barbara" preparados para foto principal, foto de consulta y retrato.
+- Guia de fotos añadida en `docs/photo-guide.md` y enlazada desde el inventario.
+
 ### Hito 11 - Revision Integral De Textos
 
 Estado: completado el 11 de julio de 2026, pendiente de revisión de copy.
@@ -220,6 +236,7 @@ Resultado:
 - Contacto: WhatsApp, llamada y email se muestran como acciones de icono en la V1.
 - Agentes: optimizar contexto con búsquedas selectivas, respuestas breves y `gh` fuera del sandbox.
 - Copy: tono cercano y claro, sin promesas clínicas ni datos profesionales no verificados.
+- Fotos: preparar huecos de foto reales, sin stock ni placeholders fotograficos definitivos.
 
 ## Pendientes De Validar
 

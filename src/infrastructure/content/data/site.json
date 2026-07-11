@@ -9,8 +9,12 @@
     "eyebrow": "Osteopatía - Pilates - Masaje deportivo",
     "addressLabel": "Dirección",
     "appointmentLabel": "Cita previa",
-    "imageAlt": "Consulta luminosa con camilla y equipo de pilates",
-    "imageCaption": "Consulta de osteopatía y pilates en Meco"
+    "photo": {
+      "eyebrow": "Foto principal pendiente",
+      "title": "Consulta, camilla o espacio de pilates",
+      "description": "Este hueco está preparado para una foto horizontal luminosa de la consulta, sin pacientes identificables.",
+      "aspectClass": "aspect-[16/10]"
+    }
   },
   "about": {
     "eyebrow": "Sobre Bárbara",
@@ -18,6 +22,20 @@
     "body": [
       "Bárbara Núñez trabaja desde la osteopatía y el Método Pilates para acompañar procesos de mejora física con una mirada global y práctica.",
       "Cada sesión parte de lo que cuenta la persona, de cómo se mueve y de lo que necesita en su día a día. A partir de ahí, el trabajo se adapta con un objetivo claro: ganar movilidad, aliviar carga y crear hábitos de movimiento sostenibles."
+    ],
+    "photos": [
+      {
+        "eyebrow": "Foto de consulta pendiente",
+        "title": "Espacio para mostrar el entorno de trabajo",
+        "description": "Aquí irá una foto amplia y tranquila de la consulta, la camilla o el material de pilates.",
+        "aspectClass": "aspect-[16/7] max-md:aspect-[4/3]"
+      },
+      {
+        "eyebrow": "Retrato pendiente",
+        "title": "Bárbara Núñez",
+        "description": "Hueco reservado para un retrato profesional cercano, con fondo limpio y luz natural.",
+        "aspectClass": "aspect-[4/5]"
+      }
     ],
     "principles": [
       {

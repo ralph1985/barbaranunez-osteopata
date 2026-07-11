@@ -1,0 +1,56 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  description: string;
+  aspectClass?: string;
+  className?: string;
+  [key: string]: unknown;
+}
+
+const {
+  eyebrow,
+  title,
+  description,
+  aspectClass = "aspect-[16/10]",
+  className = "",
+  ...attrs
+} = Astro.props;
+---
+
+<figure
+  {...attrs}
+  class:list={[
+    "relative m-0 overflow-hidden rounded-md border border-line bg-surface shadow-soft",
+    aspectClass,
+    className,
+  ]}
+>
+  <div
+    class="absolute inset-0 bg-[linear-gradient(135deg,rgba(232,239,230,0.94),rgba(242,223,207,0.72))]"
+  >
+  </div>
+  <div
+    class="absolute inset-5 rounded-md border border-dashed border-accent-strong/30"
+  >
+  </div>
+  <div
+    class="absolute -right-14 -bottom-14 h-48 w-48 rounded-full border border-accent-strong/18"
+  >
+  </div>
+  <div
+    class="absolute top-8 right-8 h-28 w-28 rounded-full border border-warm/24"
+  >
+  </div>
+  <figcaption class="relative z-10 flex h-full flex-col justify-end p-6">
+    <p
+      class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
+    >
+      {eyebrow}
+    </p>
+    <p class="m-0 max-w-md text-2xl leading-tight font-bold text-ink">
+      {title}
+    </p>
+    <p class="mb-0 mt-3 max-w-md text-sm text-muted">{description}</p>
+  </figcaption>
+</figure>

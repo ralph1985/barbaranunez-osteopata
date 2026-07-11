@@ -1,5 +1,6 @@
 ---
 import ContactActions from "../components/ui/ContactActions.astro";
+import PhotoPlaceholder from "../components/ui/PhotoPlaceholder.astro";
 import type { SiteContent } from "../domain/site";
 
 interface Props {
@@ -55,21 +56,11 @@ const { site } = Astro.props;
       </div>
     </dl>
   </div>
-  <figure
-    class="relative m-0 aspect-[16/10] overflow-hidden rounded-md border border-line bg-surface shadow-soft"
+  <PhotoPlaceholder
+    eyebrow={site.hero.photo.eyebrow}
+    title={site.hero.photo.title}
+    description={site.hero.photo.description}
+    aspectClass={site.hero.photo.aspectClass}
     data-hero-media
-  >
-    <img
-      class="h-full w-full object-cover"
-      src="/assets/clinic-placeholder.png"
-      width="1586"
-      height="992"
-      alt={site.hero.imageAlt}
-    />
-    <figcaption
-      class="absolute right-4 bottom-4 max-w-[calc(100%-2rem)] rounded-md border border-white/50 bg-ink/60 px-3 py-2 text-sm text-white backdrop-blur-md max-md:static max-md:max-w-none max-md:border-0 max-md:bg-surface max-md:text-ink max-md:backdrop-blur-none"
-    >
-      {site.hero.imageCaption}
-    </figcaption>
-  </figure>
+  />
 </section>

@@ -39,14 +39,20 @@ export interface HeroCopy {
   eyebrow: string;
   addressLabel: string;
   appointmentLabel: string;
-  imageAlt: string;
-  imageCaption: string;
+  photo: PhotoPlaceholderCopy;
 }
 
 export interface ContactCopy {
   eyebrow: string;
   title: string;
   hoursTitle: string;
+}
+
+export interface PhotoPlaceholderCopy {
+  eyebrow: string;
+  title: string;
+  description: string;
+  aspectClass: string;
 }
 
 export interface ContactInfo {
@@ -64,6 +70,7 @@ export interface AboutContent {
   eyebrow: string;
   title: string;
   body: string[];
+  photos: PhotoPlaceholderCopy[];
   principles: NumberedCopy[];
   approach: SectionCopy;
 }

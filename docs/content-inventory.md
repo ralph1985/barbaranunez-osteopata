@@ -60,6 +60,13 @@ La copia revisable está en `src/infrastructure/content/data/site.json`, con ton
 
 Las páginas legales siguen siendo bases revisables. Se han ajustado para mejorar claridad, pero no sustituyen una validación legal con datos completos de titularidad, privacidad y cookies.
 
+## Fotos Pendientes
+
+La web no usa fotos de stock ni reutiliza fotos de la web actual sin permiso.
+Los huecos visuales de la home y la pagina "Sobre Barbara" estan preparados con
+placeholders sobrios. La guia de fotos para sustituirlos esta en
+`docs/photo-guide.md`.
+
 ## Datos Pendientes
 
 - Confirmar si el móvil `620 88 89 37` acepta WhatsApp para usarlo como CTA principal.

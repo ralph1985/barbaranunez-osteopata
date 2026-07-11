@@ -1,4 +1,5 @@
 ---
+import PhotoPlaceholder from "../components/ui/PhotoPlaceholder.astro";
 import SectionHeader from "../components/ui/SectionHeader.astro";
 import type { AboutContent } from "../domain/site";
 
@@ -25,6 +26,20 @@ const { about } = Astro.props;
       <div class="max-w-2xl space-y-4 text-lg text-muted">
         {about.body.map((paragraph) => <p>{paragraph}</p>)}
       </div>
+    </div>
+    <div
+      class="mt-10 grid grid-cols-[minmax(0,0.74fr)_minmax(280px,0.36fr)] gap-4 max-lg:grid-cols-1"
+    >
+      {
+        about.photos.map((photo) => (
+          <PhotoPlaceholder
+            eyebrow={photo.eyebrow}
+            title={photo.title}
+            description={photo.description}
+            aspectClass={photo.aspectClass}
+          />
+        ))
+      }
     </div>
     <div
       class="mt-10 grid grid-cols-3 gap-4 max-md:grid-cols-1"
