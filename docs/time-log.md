@@ -18,3 +18,4 @@ Registro oficial del tiempo comunicado por el usuario para el seguimiento y la f
 | 20260711-002 | 2026-07-11 | Hito 9 - Ahorro de tokens en agentes | Reglas de agentes para reducir contexto y lecturas innecesarias   |       3 |  0,05 |     Sí     |       |
 | 20260711-003 | 2026-07-11 | Hito 10 - Placeholders y guía fotos  | Huecos visuales preparados y guía de fotos para Bárbara           |      10 |  0,17 |     Sí     |       |
 | 20260711-004 | 2026-07-11 | Hito 11 - Revisión de textos         | Copy principal, legales revisables y centralización de contenido  |      10 |  0,17 |     Sí     |       |
+| 20260711-005 | 2026-07-11 | Hito 12 - Voz de Bárbara             | Copy comercial en primera persona y documentación editorial       |       5 |  0,08 |     Sí     |       |
