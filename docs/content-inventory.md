@@ -47,7 +47,7 @@ La web actual lo describe como pilates en suelo con el peso corporal como resist
 
 ## Redacción Nueva Aplicada
 
-La copia revisable está en `src/infrastructure/content/data/site.json`, con tono cercano y claro, y cubre:
+La copia revisable está en `src/infrastructure/content/data/site.json`, con tono cercano y claro. El copy comercial está redactado en primera persona, como si Bárbara explicara su forma de trabajar, y cubre:
 
 - Hero.
 - Sobre Bárbara.
@@ -59,6 +59,8 @@ La copia revisable está en `src/infrastructure/content/data/site.json`, con ton
 - Footer.
 
 Las páginas legales siguen siendo bases revisables. Se han ajustado para mejorar claridad, pero no sustituyen una validación legal con datos completos de titularidad, privacidad y cookies.
+
+Los textos legales, metadatos técnicos, navegación, horarios y datos de contacto pueden mantener voz institucional o neutra cuando sea más claro.
 
 ## Fotos Pendientes
 

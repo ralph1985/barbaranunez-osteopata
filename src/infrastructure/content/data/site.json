@@ -3,8 +3,8 @@
   "title": "Bárbara Núñez Osteópata",
   "description": "Consulta de osteopatía, masaje deportivo y pilates en Meco, Madrid, con atención cercana y adaptada a cada persona.",
   "businessName": "Bárbara Núñez",
-  "claim": "Osteopatía y pilates para moverte con más confianza.",
-  "intro": "En la consulta de Meco, Bárbara combina osteopatía, masaje deportivo y pilates para entender qué necesitas y acompañarte con un trabajo progresivo.",
+  "claim": "Te acompaño para moverte con más confianza.",
+  "intro": "En mi consulta de Meco combino osteopatía, masaje deportivo y pilates para entender qué necesitas y trabajar contigo de forma progresiva.",
   "hero": {
     "eyebrow": "Osteopatía - Pilates - Masaje deportivo",
     "addressLabel": "Dirección",
@@ -18,10 +18,10 @@
   },
   "about": {
     "eyebrow": "Sobre Bárbara",
-    "title": "Una atención cercana para moverte con más seguridad",
+    "title": "Trabajo contigo desde una atención cercana y adaptada",
     "body": [
-      "Bárbara Núñez trabaja desde la osteopatía y el Método Pilates para acompañar procesos de mejora física con una mirada global y práctica.",
-      "Cada sesión parte de lo que cuenta la persona, de cómo se mueve y de lo que necesita en su día a día. A partir de ahí, el trabajo se adapta con un objetivo claro: ganar movilidad, aliviar carga y crear hábitos de movimiento sostenibles."
+      "Soy Bárbara Núñez y trabajo desde la osteopatía y el Método Pilates para acompañar procesos de mejora física con una mirada global y práctica.",
+      "Cada sesión empieza escuchando qué te ocurre, cómo te mueves y qué necesitas en tu día a día. A partir de ahí, adapto el trabajo con un objetivo claro: ganar movilidad, aliviar carga y crear hábitos de movimiento sostenibles."
     ],
     "photos": [
       {
@@ -41,44 +41,44 @@
       {
         "number": "01",
         "title": "Escucha clínica",
-        "body": "Primero se valora el motivo de consulta y cómo está afectando a tu vida diaria."
+        "body": "Primero escucho tu motivo de consulta y cómo está afectando a tu vida diaria."
       },
       {
         "number": "02",
         "title": "Trabajo manual",
-        "body": "La sesión se orienta a mejorar movilidad, equilibrio corporal y función, siempre según tu caso."
+        "body": "Oriento la sesión a mejorar movilidad, equilibrio corporal y función, siempre según tu caso."
       },
       {
         "number": "03",
         "title": "Movimiento consciente",
-        "body": "Pilates ayuda a reforzar fuerza, postura y control para sostener la mejora con el tiempo."
+        "body": "Uso el pilates para reforzar fuerza, postura y control de forma progresiva."
       }
     ],
     "approach": {
       "eyebrow": "Enfoque",
-      "title": "Entender el cuerpo, trabajar sobre él y acompañar el cambio",
-      "description": "Osteopatía, masaje deportivo y pilates se conectan en una misma idea: recuperar movimiento útil para la vida diaria. La consulta combina valoración, trabajo manual y ejercicio adaptado para avanzar de forma clara y progresiva."
+      "title": "Entender tu cuerpo, trabajar sobre él y acompañar el cambio",
+      "description": "Conecto osteopatía, masaje deportivo y pilates en una misma idea: ayudarte a recuperar movimiento útil para la vida diaria. En consulta combino valoración, trabajo manual y ejercicio adaptado para avanzar contigo de forma clara y progresiva."
     }
   },
   "pages": {
     "about": {
       "eyebrow": "Sobre Bárbara",
-      "title": "Una atención cercana para moverte con más seguridad",
-      "description": "Conoce una forma de trabajo basada en escucha, adaptación y movimiento consciente.",
+      "title": "Trabajo contigo desde una atención cercana y adaptada",
+      "description": "Conoce cómo acompaño cada proceso desde la escucha, la adaptación y el movimiento consciente.",
       "metaTitle": "Sobre Bárbara",
       "metaDescription": "Conoce el enfoque de trabajo de Bárbara Núñez en osteopatía, masaje deportivo y pilates en Meco."
     },
     "services": {
       "eyebrow": "Servicios",
       "title": "Osteopatía, masaje deportivo y pilates",
-      "description": "Tratamientos y clases para cuidar movilidad, postura, fuerza y recuperación física con una atención adaptada.",
+      "description": "Te acompaño con tratamientos y clases para cuidar movilidad, postura, fuerza y recuperación física desde una atención adaptada.",
       "metaTitle": "Servicios",
       "metaDescription": "Servicios de osteopatía estructural, osteopatía craneosacral, masaje deportivo, pilates máquina y pilates mat en Meco."
     },
     "contact": {
       "eyebrow": "Contacto",
       "title": "Cita previa y ubicación",
-      "description": "Pide cita por WhatsApp, teléfono o email en la consulta de Meco.",
+      "description": "Pide cita por WhatsApp, teléfono o email y te atenderé en la consulta de Meco.",
       "metaTitle": "Contacto",
       "metaDescription": "Contacto, WhatsApp, teléfono, email, dirección y horario de la consulta de Bárbara Núñez en Meco."
     }
@@ -87,14 +87,14 @@
     {
       "href": "/sobre/",
       "eyebrow": "Sobre Bárbara",
-      "title": "Cómo trabaja",
-      "summary": "Una atención basada en escucha, valoración y adaptación a cada proceso."
+      "title": "Cómo trabajo",
+      "summary": "Te atiendo desde la escucha, la valoración y la adaptación a tu proceso."
     },
     {
       "href": "/servicios/",
       "eyebrow": "Servicios",
       "title": "Osteopatía, masaje y pilates",
-      "summary": "Consulta los tratamientos y clases disponibles para cuidar tu movimiento."
+      "summary": "Consulta los tratamientos y clases con los que puedo ayudarte a cuidar tu movimiento."
     },
     {
       "href": "/contacto/",
@@ -106,7 +106,7 @@
   "servicesIntro": {
     "eyebrow": "Servicios",
     "title": "Tratamientos y clases para cuidar cómo te mueves",
-    "description": "Sesiones pensadas para mejorar movilidad, fuerza, postura y recuperación física desde un trabajo progresivo y adaptado."
+    "description": "Planteo cada sesión para trabajar movilidad, fuerza, postura y recuperación física desde un enfoque progresivo y adaptado."
   },
   "nav": [
     {
@@ -129,23 +129,23 @@
   "services": [
     {
       "title": "Osteopatía estructural",
-      "summary": "Trabajo manual para valorar molestias musculares, articulares, tendinosas y ligamentosas, con atención al origen de la disfunción y no solo al síntoma."
+      "summary": "Trabajo manualmente molestias musculares, articulares, tendinosas y ligamentosas, prestando atención al origen de la disfunción y no solo al síntoma."
     },
     {
       "title": "Osteopatía craneosacral",
-      "summary": "Enfoque osteopático centrado en la relación entre cráneo, columna y sacro para valorar tensiones y acompañar un mejor equilibrio corporal."
+      "summary": "Valoro tensiones desde la relación entre cráneo, columna y sacro para acompañar un mejor equilibrio corporal."
     },
     {
       "title": "Técnico masajista deportivo",
-      "summary": "Masaje específico para musculatura sometida a carga deportiva, indicado como apoyo en mantenimiento, preparación y recuperación."
+      "summary": "Realizo masaje específico para musculatura sometida a carga deportiva, como apoyo en mantenimiento, preparación y recuperación."
     },
     {
       "title": "Pilates máquina",
-      "summary": "Ejercicio con máquinas y resistencias ajustables para trabajar fuerza, movilidad, control postural y coordinación."
+      "summary": "Trabajo con máquinas y resistencias ajustables para mejorar fuerza, movilidad, control postural y coordinación."
     },
     {
       "title": "Pilates mat",
-      "summary": "Pilates en suelo con el propio peso corporal, enfocado en core, flexibilidad, postura, equilibrio y conciencia corporal."
+      "summary": "En las sesiones de suelo usamos el propio peso corporal para trabajar core, flexibilidad, postura, equilibrio y conciencia corporal."
     }
   ],
   "contact": {
@@ -162,7 +162,7 @@
     ],
     "copy": {
       "eyebrow": "Contacto",
-      "title": "Pide cita en la consulta de Meco",
+      "title": "Pide cita en mi consulta de Meco",
       "hoursTitle": "Horario de atención"
     }
   },

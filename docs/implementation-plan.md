@@ -219,6 +219,23 @@ Resultado:
 - Páginas legales ajustadas para mejorar claridad, conservando pendientes explícitos de titularidad, privacidad y cookies.
 - Datos factuales inventariados mantenidos sin cambios.
 
+### Hito 12 - Voz De Barbara En El Copy
+
+Estado: completado el 11 de julio de 2026, pendiente de revisión de copy.
+
+Entregable:
+
+- Reescribir el copy comercial para que suene como Bárbara hablando en primera persona.
+- Mantener llamadas a la acción en segunda persona y textos legales en voz institucional.
+- Conservar tono cercano, claro y profesional, sin promesas clínicas.
+- Validar con lint, build y `git diff --check`.
+
+Resultado:
+
+- Hero, sobre Bárbara, enfoque, servicios, tarjetas de home y contacto pasan a una voz de primera persona sobria.
+- Metadatos, navegación, horarios y legales mantienen voz neutra cuando resulta más claro o más correcto.
+- La estructura centralizada en `src/infrastructure/content/data/site.json` se mantiene sin cambios de contrato.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -236,6 +253,7 @@ Resultado:
 - Contacto: WhatsApp, llamada y email se muestran como acciones de icono en la V1.
 - Agentes: optimizar contexto con búsquedas selectivas, respuestas breves y `gh` fuera del sandbox.
 - Copy: tono cercano y claro, sin promesas clínicas ni datos profesionales no verificados.
+- Voz del copy: Bárbara habla en primera persona en el copy comercial; legales y metadatos pueden mantener voz institucional.
 - Fotos: preparar huecos de foto reales, sin stock ni placeholders fotograficos definitivos.
 
 ## Pendientes De Validar
