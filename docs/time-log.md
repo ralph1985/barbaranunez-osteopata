@@ -14,3 +14,4 @@ Registro oficial del tiempo comunicado por el usuario para el seguimiento y la f
 | 20260710-005 | 2026-07-10 | Hito 5 - AnimeJS y movimiento        | Dependencia AnimeJS, entrypoint JS y animaciones accesibles       |      15 |  0,25 |     Sí     |       |
 | 20260710-006 | 2026-07-10 | Hito 6 - Páginas y menú lateral      | Páginas separadas, menú derecho y contacto por WhatsApp           |      20 |  0,33 |     Sí     |       |
 | 20260710-007 | 2026-07-10 | Hito 7 - Cabecera persistente        | Cabecera sticky con acceso al menú siempre visible                |       5 |  0,08 |     Sí     |       |
+| 20260711-001 | 2026-07-11 | Hito 8 - Hero y contacto             | Dirección completa, H1 ajustado y CTAs con iconos                 |      10 |  0,17 |     Sí     |       |

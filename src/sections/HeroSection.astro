@@ -21,7 +21,7 @@ const { site } = Astro.props;
       Osteopatía - Pilates - Masaje deportivo
     </p>
     <h1
-      class="m-0 max-w-3xl text-[clamp(3.1rem,7.2vw,6.1rem)] leading-[1.05] font-bold tracking-normal max-md:text-[clamp(2.55rem,14vw,4rem)]"
+      class="m-0 max-w-3xl text-[clamp(2.7rem,5.8vw,4.7rem)] leading-[1.06] font-bold tracking-normal max-md:text-[clamp(2.25rem,12vw,3.4rem)]"
       data-hero-item
     >
       {site.claim}
@@ -40,8 +40,10 @@ const { site } = Astro.props;
       data-hero-item
     >
       <div class="rounded-md border border-line bg-surface/75 p-4">
-        <dt class="text-xs font-extrabold text-muted uppercase">Ubicación</dt>
-        <dd class="mt-1 font-bold">{site.contact.city}</dd>
+        <dt class="text-xs font-extrabold text-muted uppercase">Dirección</dt>
+        <dd class="mt-1 font-bold">
+          {site.contact.address}<br />{site.contact.city}
+        </dd>
       </div>
       <div class="rounded-md border border-line bg-surface/75 p-4">
         <dt class="text-xs font-extrabold text-muted uppercase">Cita previa</dt>
