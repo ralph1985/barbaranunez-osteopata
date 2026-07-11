@@ -21,7 +21,7 @@ const { contact } = Astro.props;
     class="min-h-64 rounded-md border border-line bg-surface/85 p-5 text-muted shadow-card"
     data-animate
   >
-    <h3 class="mb-3 text-xl font-bold text-ink">Horario</h3>
+    <h3 class="mb-3 text-xl font-bold text-ink">{contact.copy.hoursTitle}</h3>
     <ul class="list-disc space-y-2 pl-5">
       {contact.hours.map((hour) => <li>{hour}</li>)}
     </ul>

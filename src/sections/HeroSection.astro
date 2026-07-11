@@ -19,7 +19,7 @@ const { site } = Astro.props;
       class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
       data-hero-item
     >
-      Osteopatía - Pilates - Masaje deportivo
+      {site.hero.eyebrow}
     </p>
     <h1
       class="m-0 max-w-3xl text-[clamp(2.7rem,5.8vw,4.7rem)] leading-[1.06] font-bold tracking-normal max-md:text-[clamp(2.25rem,12vw,3.4rem)]"
@@ -41,22 +41,26 @@ const { site } = Astro.props;
       data-hero-item
     >
       <div class="rounded-md border border-line bg-surface/75 p-4">
-        <dt class="text-xs font-extrabold text-muted uppercase">Dirección</dt>
+        <dt class="text-xs font-extrabold text-muted uppercase">
+          {site.hero.addressLabel}
+        </dt>
         <dd class="mt-1 font-bold">
           {site.contact.address}<br />{site.contact.city}
         </dd>
       </div>
       <div class="rounded-md border border-line bg-surface/75 p-4">
-        <dt class="text-xs font-extrabold text-muted uppercase">Cita previa</dt>
+        <dt class="text-xs font-extrabold text-muted uppercase">
+          {site.hero.appointmentLabel}
+        </dt>
         <dd class="mt-1 font-bold">{site.contact.phone}</dd>
       </div>
     </dl>
   </div>
   <PhotoPlaceholder
-    eyebrow="Foto principal pendiente"
-    title="Consulta, camilla o espacio de pilates"
-    description="Este hueco está preparado para una foto horizontal luminosa de la consulta, sin pacientes identificables."
-    aspectClass="aspect-[16/10]"
+    eyebrow={site.hero.photo.eyebrow}
+    title={site.hero.photo.title}
+    description={site.hero.photo.description}
+    aspectClass={site.hero.photo.aspectClass}
     data-hero-media
   />
 </section>

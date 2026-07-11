@@ -10,12 +10,14 @@ const { contact } = Astro.props;
 ---
 
 <div class="rounded-md bg-accent-strong p-8 text-white">
-  <p class="mb-3 text-xs font-extrabold tracking-wide uppercase">Contacto</p>
+  <p class="mb-3 text-xs font-extrabold tracking-wide uppercase">
+    {contact.copy.eyebrow}
+  </p>
   <h2
     id="contact-title"
     class="m-0 text-[clamp(2rem,4.6vw,3.7rem)] leading-[1.05] font-bold"
   >
-    Cita previa y ubicación
+    {contact.copy.title}
   </h2>
   <div class="mt-6 space-y-3 text-white">
     <p>{contact.address}</p>

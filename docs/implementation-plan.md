@@ -201,6 +201,24 @@ Resultado:
 - Hero y pagina "Sobre Barbara" preparados para foto principal, foto de consulta y retrato.
 - Guia de fotos añadida en `docs/photo-guide.md` y enlazada desde el inventario.
 
+### Hito 11 - Revision Integral De Textos
+
+Estado: completado el 11 de julio de 2026, pendiente de revisión de copy.
+
+Entregable:
+
+- Reescribir el copy público con tono cercano, claro y profesional.
+- Centralizar textos visibles principales en `src/infrastructure/content/data/site.json`.
+- Mantener las páginas legales como bases revisables, sin presentarlas como textos definitivos.
+- Validar con lint, build y `git diff --check`.
+
+Resultado:
+
+- Hero, tarjetas de home, intros de páginas, enfoque, servicios, contacto y footer revisados con tono más humano y directo.
+- Textos de páginas y secciones conectados al contenido local para facilitar futuras revisiones y una posible migración a CMS.
+- Páginas legales ajustadas para mejorar claridad, conservando pendientes explícitos de titularidad, privacidad y cookies.
+- Datos factuales inventariados mantenidos sin cambios.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -217,6 +235,7 @@ Resultado:
 - Cabecera: acceso al menú siempre visible mediante cabecera sticky.
 - Contacto: WhatsApp, llamada y email se muestran como acciones de icono en la V1.
 - Agentes: optimizar contexto con búsquedas selectivas, respuestas breves y `gh` fuera del sandbox.
+- Copy: tono cercano y claro, sin promesas clínicas ni datos profesionales no verificados.
 - Fotos: preparar huecos de foto reales, sin stock ni placeholders fotograficos definitivos.
 
 ## Pendientes De Validar

@@ -1,16 +1,112 @@
 {
   "lang": "es",
   "title": "Bárbara Núñez Osteópata",
-  "description": "Consulta de osteopatía, masaje deportivo y pilates en Meco, Madrid.",
+  "description": "Consulta de osteopatía, masaje deportivo y pilates en Meco, Madrid, con atención cercana y adaptada a cada persona.",
   "businessName": "Bárbara Núñez",
-  "claim": "Osteopatía y pilates para moverte mejor.",
-  "intro": "Consulta en Meco con sesiones de osteopatía, masaje deportivo y pilates orientadas a mejorar movilidad, equilibrio corporal y calidad de vida.",
+  "claim": "Osteopatía y pilates para moverte con más confianza.",
+  "intro": "En la consulta de Meco, Bárbara combina osteopatía, masaje deportivo y pilates para entender qué necesitas y acompañarte con un trabajo progresivo.",
+  "hero": {
+    "eyebrow": "Osteopatía - Pilates - Masaje deportivo",
+    "addressLabel": "Dirección",
+    "appointmentLabel": "Cita previa",
+    "photo": {
+      "eyebrow": "Foto principal pendiente",
+      "title": "Consulta, camilla o espacio de pilates",
+      "description": "Este hueco está preparado para una foto horizontal luminosa de la consulta, sin pacientes identificables.",
+      "aspectClass": "aspect-[16/10]"
+    }
+  },
   "about": {
-    "title": "Atención personalizada en osteopatía y Método Pilates",
+    "eyebrow": "Sobre Bárbara",
+    "title": "Una atención cercana para moverte con más seguridad",
     "body": [
-      "Bárbara Núñez combina la práctica osteopática con la enseñanza del Método Pilates para acompañar procesos de mejora física desde una mirada integral.",
-      "El trabajo se adapta a las necesidades de cada persona, con foco en movilidad, vitalidad, equilibrio y hábitos de movimiento sostenibles."
-    ]
+      "Bárbara Núñez trabaja desde la osteopatía y el Método Pilates para acompañar procesos de mejora física con una mirada global y práctica.",
+      "Cada sesión parte de lo que cuenta la persona, de cómo se mueve y de lo que necesita en su día a día. A partir de ahí, el trabajo se adapta con un objetivo claro: ganar movilidad, aliviar carga y crear hábitos de movimiento sostenibles."
+    ],
+    "photos": [
+      {
+        "eyebrow": "Foto de consulta pendiente",
+        "title": "Espacio para mostrar el entorno de trabajo",
+        "description": "Aquí irá una foto amplia y tranquila de la consulta, la camilla o el material de pilates.",
+        "aspectClass": "aspect-[16/7] max-md:aspect-[4/3]"
+      },
+      {
+        "eyebrow": "Retrato pendiente",
+        "title": "Bárbara Núñez",
+        "description": "Hueco reservado para un retrato profesional cercano, con fondo limpio y luz natural.",
+        "aspectClass": "aspect-[4/5]"
+      }
+    ],
+    "principles": [
+      {
+        "number": "01",
+        "title": "Escucha clínica",
+        "body": "Primero se valora el motivo de consulta y cómo está afectando a tu vida diaria."
+      },
+      {
+        "number": "02",
+        "title": "Trabajo manual",
+        "body": "La sesión se orienta a mejorar movilidad, equilibrio corporal y función, siempre según tu caso."
+      },
+      {
+        "number": "03",
+        "title": "Movimiento consciente",
+        "body": "Pilates ayuda a reforzar fuerza, postura y control para sostener la mejora con el tiempo."
+      }
+    ],
+    "approach": {
+      "eyebrow": "Enfoque",
+      "title": "Entender el cuerpo, trabajar sobre él y acompañar el cambio",
+      "description": "Osteopatía, masaje deportivo y pilates se conectan en una misma idea: recuperar movimiento útil para la vida diaria. La consulta combina valoración, trabajo manual y ejercicio adaptado para avanzar de forma clara y progresiva."
+    }
+  },
+  "pages": {
+    "about": {
+      "eyebrow": "Sobre Bárbara",
+      "title": "Una atención cercana para moverte con más seguridad",
+      "description": "Conoce una forma de trabajo basada en escucha, adaptación y movimiento consciente.",
+      "metaTitle": "Sobre Bárbara",
+      "metaDescription": "Conoce el enfoque de trabajo de Bárbara Núñez en osteopatía, masaje deportivo y pilates en Meco."
+    },
+    "services": {
+      "eyebrow": "Servicios",
+      "title": "Osteopatía, masaje deportivo y pilates",
+      "description": "Tratamientos y clases para cuidar movilidad, postura, fuerza y recuperación física con una atención adaptada.",
+      "metaTitle": "Servicios",
+      "metaDescription": "Servicios de osteopatía estructural, osteopatía craneosacral, masaje deportivo, pilates máquina y pilates mat en Meco."
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "title": "Cita previa y ubicación",
+      "description": "Pide cita por WhatsApp, teléfono o email en la consulta de Meco.",
+      "metaTitle": "Contacto",
+      "metaDescription": "Contacto, WhatsApp, teléfono, email, dirección y horario de la consulta de Bárbara Núñez en Meco."
+    }
+  },
+  "homeCards": [
+    {
+      "href": "/sobre/",
+      "eyebrow": "Sobre Bárbara",
+      "title": "Cómo trabaja",
+      "summary": "Una atención basada en escucha, valoración y adaptación a cada proceso."
+    },
+    {
+      "href": "/servicios/",
+      "eyebrow": "Servicios",
+      "title": "Osteopatía, masaje y pilates",
+      "summary": "Consulta los tratamientos y clases disponibles para cuidar tu movimiento."
+    },
+    {
+      "href": "/contacto/",
+      "eyebrow": "Contacto",
+      "title": "Pide cita",
+      "summary": "Encuentra WhatsApp, teléfono, email, dirección y horario de la consulta."
+    }
+  ],
+  "servicesIntro": {
+    "eyebrow": "Servicios",
+    "title": "Tratamientos y clases para cuidar cómo te mueves",
+    "description": "Sesiones pensadas para mejorar movilidad, fuerza, postura y recuperación física desde un trabajo progresivo y adaptado."
   },
   "nav": [
     {
@@ -33,23 +129,23 @@
   "services": [
     {
       "title": "Osteopatía estructural",
-      "summary": "Trabajo manual dirigido a molestias musculares, articulares, tendinosas y ligamentosas, buscando el origen de la disfunción y no solo el síntoma."
+      "summary": "Trabajo manual para valorar molestias musculares, articulares, tendinosas y ligamentosas, con atención al origen de la disfunción y no solo al síntoma."
     },
     {
       "title": "Osteopatía craneosacral",
-      "summary": "Enfoque osteopático centrado en la relación entre el sistema craneal y el sacro para detectar y corregir disfunciones."
+      "summary": "Enfoque osteopático centrado en la relación entre cráneo, columna y sacro para valorar tensiones y acompañar un mejor equilibrio corporal."
     },
     {
       "title": "Técnico masajista deportivo",
-      "summary": "Masaje específico para musculatura sometida a carga deportiva, útil en mantenimiento, preparación para competición y recuperación posterior."
+      "summary": "Masaje específico para musculatura sometida a carga deportiva, indicado como apoyo en mantenimiento, preparación y recuperación."
     },
     {
       "title": "Pilates máquina",
-      "summary": "Ejercicio con máquinas de resistencia ajustable para fortalecer el cuerpo, mejorar movilidad, control postural y coordinación."
+      "summary": "Ejercicio con máquinas y resistencias ajustables para trabajar fuerza, movilidad, control postural y coordinación."
     },
     {
       "title": "Pilates mat",
-      "summary": "Pilates en suelo con el peso corporal como resistencia, enfocado en fuerza, flexibilidad, postura, core y conciencia corporal."
+      "summary": "Pilates en suelo con el propio peso corporal, enfocado en core, flexibilidad, postura, equilibrio y conciencia corporal."
     }
   ],
   "contact": {
@@ -63,6 +159,12 @@
       "Lunes a viernes de 09:00 a 14:00",
       "Lunes a viernes de 16:00 a 21:00",
       "Sábados de 09:00 a 14:00"
-    ]
-  }
+    ],
+    "copy": {
+      "eyebrow": "Contacto",
+      "title": "Pide cita en la consulta de Meco",
+      "hoursTitle": "Horario de atención"
+    }
+  },
+  "footer": "Osteopatía, masaje deportivo y pilates en Meco."
 }

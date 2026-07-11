@@ -1,13 +1,14 @@
 ---
 import SectionHeader from "../components/ui/SectionHeader.astro";
 import ServiceCard from "../components/ui/ServiceCard.astro";
-import type { Service } from "../domain/site";
+import type { SectionCopy, Service } from "../domain/site";
 
 interface Props {
+  intro: SectionCopy;
   services: Service[];
 }
 
-const { services } = Astro.props;
+const { intro, services } = Astro.props;
 ---
 
 <section
@@ -17,14 +18,11 @@ const { services } = Astro.props;
 >
   <div data-animate>
     <SectionHeader
-      eyebrow="Servicios"
+      eyebrow={intro.eyebrow}
       id="services-title"
-      title="Tratamientos y clases para cuidar el movimiento"
+      title={intro.title}
     >
-      <p>
-        Sesiones orientadas a mejorar movilidad, fuerza, postura y recuperación
-        física desde un trabajo progresivo y adaptado.
-      </p>
+      <p>{intro.description}</p>
     </SectionHeader>
   </div>
   <div
