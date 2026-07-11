@@ -169,6 +169,22 @@ Resultado:
 - Claim del hero acortado y tamaño máximo del H1 reducido.
 - Acciones de contacto representadas con iconos SVG, `aria-label` y `title`.
 
+### Hito 9 - Ahorro De Tokens En Agentes
+
+Estado: completado el 11 de julio de 2026.
+
+Entregable:
+
+- Añadir reglas compartidas para que los agentes lean menos contexto innecesario.
+- Documentar criterios de respuesta breve, búsqueda selectiva y validación proporcionada.
+- Evitar falsos ciclos de autenticación de GitHub por usar `gh` dentro del sandbox.
+
+Resultado:
+
+- `AGENTS.md` incorpora una sección de ahorro de tokens.
+- `docs/agents-plan.md` activa el agente de ahorro de tokens con responsabilidades concretas.
+- La regla de usar `gh` fuera del sandbox queda explícita para futuros PRs.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -184,6 +200,7 @@ Resultado:
 - Navegación: secciones principales en páginas separadas y menú lateral derecho como navegación principal.
 - Cabecera: acceso al menú siempre visible mediante cabecera sticky.
 - Contacto: WhatsApp, llamada y email se muestran como acciones de icono en la V1.
+- Agentes: optimizar contexto con búsquedas selectivas, respuestas breves y `gh` fuera del sandbox.
 
 ## Pendientes De Validar
 
