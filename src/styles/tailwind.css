@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #18313f;
+  --color-muted: #58707c;
+  --color-bg: #eef7fb;
+  --color-surface: #fbfdff;
+  --color-soft: #dceef6;
+  --color-warm: #4f8fa8;
+  --color-warm-soft: #d4e8f1;
+  --color-accent: #5f9db7;
+  --color-accent-strong: #15506d;
+  --color-line: rgba(24, 49, 63, 0.16);
+  --shadow-soft: 0 24px 70px rgba(21, 80, 109, 0.13);
+  --shadow-card: 0 16px 40px rgba(21, 80, 109, 0.09);
+}
+
+@utility w-page {
+  width: min(1120px, calc(100% - 2rem));
+}

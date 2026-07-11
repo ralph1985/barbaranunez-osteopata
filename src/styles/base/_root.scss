@@ -1,0 +1,25 @@
+@use "../abstracts/tokens" as *;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-ink);
+    background:
+      linear-gradient(180deg, #f7fcff 0, var(--color-bg) 46rem), var(--color-bg);
+    font-family: $font-sans;
+    line-height: 1.6;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+  }
+}
