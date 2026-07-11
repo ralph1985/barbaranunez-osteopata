@@ -2,7 +2,6 @@
 import ContactActions from "../components/ui/ContactActions.astro";
 import type { SiteContent } from "../domain/site";
 import { getAbsoluteUrl } from "../config/site-url";
-import "../styles/tailwind.css";
 import "../styles/global.scss";
 
 interface Props {
@@ -41,23 +40,24 @@ const pageTitle =
     <meta name="twitter:description" content={description} />
     <title>{pageTitle}</title>
   </head>
-  <body class="overflow-x-hidden">
-    <header
-      class="sticky top-0 z-30 border-b border-line bg-bg/90 backdrop-blur-md"
-    >
-      <div class="mx-auto flex w-page items-center justify-between gap-6 py-3">
+  <body class="site-body">
+    <header class="site-header">
+      <div class="site-header__inner page-shell">
         <a
-          class="font-bold text-accent-strong no-underline"
+          class="site-brand"
           href="/"
           aria-current={currentPath === "/" ? "page" : undefined}
         >
           {site.businessName}
         </a>
-        <nav class="hidden" aria-label="Navegacion principal">
+        <nav
+          class="site-nav site-nav--hidden"
+          aria-label="Navegacion principal"
+        >
           {
             site.nav.map((item) => (
               <a
-                class="text-[0.95rem] text-muted no-underline hover:text-accent-strong"
+                class="site-nav__link"
                 href={item.href}
                 aria-current={currentPath === item.href ? "page" : undefined}
               >
@@ -67,37 +67,33 @@ const pageTitle =
           }
         </nav>
         <button
-          class="inline-flex min-h-11 items-center gap-3 rounded-md border border-line bg-surface px-4 py-2 font-bold text-accent-strong shadow-card"
+          class="menu-button"
           type="button"
           aria-controls="site-menu"
           aria-expanded="false"
           data-menu-open
         >
           <span>Menú</span>
-          <span class="grid gap-1" aria-hidden="true">
-            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
-            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
-            <span class="block h-0.5 w-5 rounded-full bg-accent-strong"></span>
+          <span class="menu-button__lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </span>
         </button>
       </div>
     </header>
-    <div
-      class="fixed inset-0 z-40 hidden bg-ink/40 opacity-0 transition-opacity"
-      data-menu-overlay
-    >
-    </div>
+    <div class="menu-overlay is-hidden" data-menu-overlay></div>
     <aside
       id="site-menu"
-      class="fixed top-0 right-0 z-50 flex h-dvh w-[min(24rem,calc(100%-2rem))] translate-x-full flex-col gap-8 border-l border-line bg-surface p-6 shadow-soft transition-transform"
+      class="site-menu is-closed"
       aria-label="Menú principal"
       aria-hidden="true"
       data-menu-panel
     >
-      <div class="flex items-center justify-between gap-4">
-        <p class="m-0 font-bold text-accent-strong">{site.businessName}</p>
+      <div class="site-menu__header">
+        <p class="site-menu__brand">{site.businessName}</p>
         <button
-          class="inline-flex min-h-10 min-w-10 items-center justify-center rounded-md border border-line bg-bg text-2xl leading-none text-accent-strong"
+          class="site-menu__close"
           type="button"
           aria-label="Cerrar menú"
           data-menu-close
@@ -105,11 +101,11 @@ const pageTitle =
           ×
         </button>
       </div>
-      <nav class="grid gap-3" aria-label="Navegación lateral">
+      <nav class="site-menu__nav" aria-label="Navegación lateral">
         {
           site.nav.map((item) => (
             <a
-              class="rounded-md border border-line px-4 py-3 text-lg font-bold text-ink no-underline hover:border-accent-strong hover:text-accent-strong"
+              class="site-menu__link"
               href={item.href}
               aria-current={currentPath === item.href ? "page" : undefined}
               data-menu-link
@@ -119,7 +115,7 @@ const pageTitle =
           ))
         }
       </nav>
-      <div class="mt-auto">
+      <div class="site-menu__actions">
         <ContactActions
           phone={site.contact.phone}
           email={site.contact.email}
@@ -130,23 +126,12 @@ const pageTitle =
     <main>
       <slot />
     </main>
-    <footer
-      class="mx-auto flex w-page items-center justify-between gap-6 border-t border-line py-4 text-muted max-md:flex-col max-md:items-start"
-    >
+    <footer class="site-footer page-shell">
       <p>{site.businessName} - {site.footer}</p>
-      <nav class="flex flex-wrap gap-3" aria-label="Legal">
-        <a
-          class="text-[0.95rem] no-underline hover:text-accent-strong"
-          href="/legal/aviso-legal/">Aviso legal</a
-        >
-        <a
-          class="text-[0.95rem] no-underline hover:text-accent-strong"
-          href="/legal/privacidad/">Privacidad</a
-        >
-        <a
-          class="text-[0.95rem] no-underline hover:text-accent-strong"
-          href="/legal/cookies/">Cookies</a
-        >
+      <nav class="site-footer__nav" aria-label="Legal">
+        <a class="site-footer__link" href="/legal/aviso-legal/">Aviso legal</a>
+        <a class="site-footer__link" href="/legal/privacidad/">Privacidad</a>
+        <a class="site-footer__link" href="/legal/cookies/">Cookies</a>
       </nav>
     </footer>
     <script>

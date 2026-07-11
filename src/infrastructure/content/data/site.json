@@ -13,7 +13,7 @@
       "eyebrow": "Foto principal pendiente",
       "title": "Consulta, camilla o espacio de pilates",
       "description": "Este hueco está preparado para una foto horizontal luminosa de la consulta, sin pacientes identificables.",
-      "aspectClass": "aspect-[16/10]"
+      "aspectClass": "photo-placeholder--landscape"
     }
   },
   "about": {
@@ -28,13 +28,13 @@
         "eyebrow": "Foto de consulta pendiente",
         "title": "Espacio para mostrar el entorno de trabajo",
         "description": "Aquí irá una foto amplia y tranquila de la consulta, la camilla o el material de pilates.",
-        "aspectClass": "aspect-[16/7] max-md:aspect-[4/3]"
+        "aspectClass": "photo-placeholder--panorama"
       },
       {
         "eyebrow": "Retrato pendiente",
         "title": "Bárbara Núñez",
         "description": "Hueco reservado para un retrato profesional cercano, con fondo limpio y luz natural.",
-        "aspectClass": "aspect-[4/5]"
+        "aspectClass": "photo-placeholder--portrait"
       }
     ],
     "principles": [

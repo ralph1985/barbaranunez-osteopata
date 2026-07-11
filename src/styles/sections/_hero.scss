@@ -1,0 +1,72 @@
+@use "../abstracts/mixins" as *;
+
+.hero {
+  display: grid;
+  min-height: calc(100vh - 5.3rem);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  align-items: center;
+  gap: 3.5rem;
+  padding-block: 3.5rem;
+
+  @include media-lg {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  @include media-md {
+    padding-block: 2.5rem;
+  }
+}
+
+.hero__content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero__title {
+  max-width: 48rem;
+  margin: 0;
+  font-size: clamp(2.7rem, 5.8vw, 4.7rem);
+  font-weight: 700;
+  line-height: 1.06;
+
+  @include media-md {
+    font-size: clamp(2.25rem, 12vw, 3.4rem);
+  }
+}
+
+.hero__intro {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+.hero__facts {
+  display: grid;
+  max-width: 36rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+
+  @include media-md {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero__fact {
+  @include card-surface(0.75);
+  padding: 1rem;
+}
+
+.hero__fact-label {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero__fact-value {
+  margin: 0.25rem 0 0;
+  font-weight: 700;
+}

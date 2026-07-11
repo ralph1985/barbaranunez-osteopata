@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as *;
+
+.home-cards {
+  padding-block: 4rem;
+  border-block: 1px solid var(--color-line);
+  background: rgba(220, 238, 246, 0.55);
+
+  @include media-md {
+    padding-block: 3rem;
+  }
+}
+
+.home-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+  }
+}

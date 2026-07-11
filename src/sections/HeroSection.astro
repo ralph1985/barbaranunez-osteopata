@@ -10,24 +10,15 @@ interface Props {
 const { site } = Astro.props;
 ---
 
-<section
-  class="mx-auto grid min-h-[calc(100vh-5.3rem)] w-page grid-cols-[minmax(0,0.92fr)_minmax(420px,1.08fr)] items-center gap-14 py-14 max-lg:min-h-0 max-lg:grid-cols-1 max-md:py-10"
-  data-hero
->
-  <div class="space-y-6" data-hero-content>
-    <p
-      class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
-      data-hero-item
-    >
+<section class="hero page-shell" data-hero>
+  <div class="hero__content" data-hero-content>
+    <p class="eyebrow" data-hero-item>
       {site.hero.eyebrow}
     </p>
-    <h1
-      class="m-0 max-w-3xl text-[clamp(2.7rem,5.8vw,4.7rem)] leading-[1.06] font-bold tracking-normal max-md:text-[clamp(2.25rem,12vw,3.4rem)]"
-      data-hero-item
-    >
+    <h1 class="hero__title" data-hero-item>
       {site.claim}
     </h1>
-    <p class="max-w-2xl text-lg text-muted" data-hero-item>{site.intro}</p>
+    <p class="hero__intro" data-hero-item>{site.intro}</p>
     <div data-hero-item>
       <ContactActions
         phone={site.contact.phone}
@@ -35,24 +26,16 @@ const { site } = Astro.props;
         whatsappHref={site.contact.whatsappHref}
       />
     </div>
-    <dl
-      class="grid max-w-xl grid-cols-2 gap-3 max-md:grid-cols-1"
-      aria-label="Datos de la consulta"
-      data-hero-item
-    >
-      <div class="rounded-md border border-line bg-surface/75 p-4">
-        <dt class="text-xs font-extrabold text-muted uppercase">
-          {site.hero.addressLabel}
-        </dt>
-        <dd class="mt-1 font-bold">
+    <dl class="hero__facts" aria-label="Datos de la consulta" data-hero-item>
+      <div class="hero__fact">
+        <dt class="hero__fact-label">{site.hero.addressLabel}</dt>
+        <dd class="hero__fact-value">
           {site.contact.address}<br />{site.contact.city}
         </dd>
       </div>
-      <div class="rounded-md border border-line bg-surface/75 p-4">
-        <dt class="text-xs font-extrabold text-muted uppercase">
-          {site.hero.appointmentLabel}
-        </dt>
-        <dd class="mt-1 font-bold">{site.contact.phone}</dd>
+      <div class="hero__fact">
+        <dt class="hero__fact-label">{site.hero.appointmentLabel}</dt>
+        <dd class="hero__fact-value">{site.contact.phone}</dd>
       </div>
     </dl>
   </div>

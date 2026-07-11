@@ -12,7 +12,7 @@ const { intro, services } = Astro.props;
 ---
 
 <section
-  class="mx-auto w-page py-20 max-md:py-16"
+  class="services page-shell section-space"
   id="servicios"
   aria-labelledby="services-title"
 >
@@ -25,10 +25,7 @@ const { intro, services } = Astro.props;
       <p>{intro.description}</p>
     </SectionHeader>
   </div>
-  <div
-    class="grid grid-cols-5 gap-4 max-lg:grid-cols-2 max-md:grid-cols-1"
-    data-animate-group
-  >
+  <div class="services__grid" data-animate-group>
     {services.map((service) => <ServiceCard service={service} />)}
   </div>
 </section>

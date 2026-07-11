@@ -1,4 +1,6 @@
 $page-max-width: 1120px;
+$radius: 0.5rem;
+$header-height: 4.25rem;
 
 $font-sans:
   Inter,
@@ -8,3 +10,6 @@ $font-sans:
   BlinkMacSystemFont,
   "Segoe UI",
   sans-serif;
+
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;

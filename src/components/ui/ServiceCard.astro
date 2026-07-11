@@ -8,11 +8,8 @@ interface Props {
 const { service } = Astro.props;
 ---
 
-<article
-  class="min-h-64 overflow-hidden rounded-md border border-line bg-surface/85 p-5 shadow-card"
->
-  <span class="mb-4 block h-1 w-9 rounded-full bg-warm" aria-hidden="true"
-  ></span>
-  <h3 class="mb-3 mt-0 text-xl leading-tight font-bold">{service.title}</h3>
-  <p class="text-muted">{service.summary}</p>
+<article class="service-card">
+  <span class="service-card__mark" aria-hidden="true"></span>
+  <h3 class="service-card__title">{service.title}</h3>
+  <p class="service-card__summary">{service.summary}</p>
 </article>

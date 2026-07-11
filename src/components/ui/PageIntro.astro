@@ -8,16 +8,12 @@ interface Props {
 const { eyebrow, title, description } = Astro.props;
 ---
 
-<header class="mx-auto w-page py-16 max-md:py-12" data-animate>
-  <p
-    class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase"
-  >
+<header class="page-intro page-shell" data-animate>
+  <p class="eyebrow">
     {eyebrow}
   </p>
-  <h1
-    class="m-0 max-w-4xl text-[clamp(2.6rem,6vw,5rem)] leading-[1.05] font-bold"
-  >
+  <h1 class="page-intro__title">
     {title}
   </h1>
-  <p class="mt-5 max-w-2xl text-lg text-muted">{description}</p>
+  <p class="page-intro__description">{description}</p>
 </header>

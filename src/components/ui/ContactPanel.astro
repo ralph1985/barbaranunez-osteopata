@@ -9,17 +9,14 @@ interface Props {
 const { contact } = Astro.props;
 ---
 
-<div class="rounded-md bg-accent-strong p-8 text-white">
-  <p class="mb-3 text-xs font-extrabold tracking-wide uppercase">
+<div class="contact-panel">
+  <p class="contact-panel__eyebrow">
     {contact.copy.eyebrow}
   </p>
-  <h2
-    id="contact-title"
-    class="m-0 text-[clamp(2rem,4.6vw,3.7rem)] leading-[1.05] font-bold"
-  >
+  <h2 id="contact-title" class="contact-panel__title">
     {contact.copy.title}
   </h2>
-  <div class="mt-6 space-y-3 text-white">
+  <div class="contact-panel__details">
     <p>{contact.address}</p>
     <p>{contact.city}</p>
     <p>
@@ -44,7 +41,7 @@ const { contact } = Astro.props;
       <a href={`mailto:${contact.email}`}>{contact.email}</a>
     </p>
   </div>
-  <div class="mt-6">
+  <div class="contact-panel__actions">
     <ContactActions
       email={contact.email}
       phone={contact.phone}

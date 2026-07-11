@@ -1,0 +1,45 @@
+@use "../abstracts/tokens" as *;
+
+.button {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--button-border);
+  border-radius: $radius;
+  color: var(--button-color);
+  background: var(--button-bg);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-0.125rem);
+  }
+}
+
+.button--primary {
+  --button-border: var(--color-accent-strong);
+  --button-bg: var(--color-accent-strong);
+  --button-color: #fff;
+}
+
+.button--secondary {
+  --button-border: var(--color-accent-strong);
+  --button-bg: var(--color-surface);
+  --button-color: var(--color-accent-strong);
+}
+
+.button--light {
+  --button-border: #fff;
+  --button-bg: #fff;
+  --button-color: var(--color-accent-strong);
+}
+
+.button--outlineLight {
+  --button-border: rgba(255, 255, 255, 0.7);
+  --button-bg: transparent;
+  --button-color: #fff;
+}

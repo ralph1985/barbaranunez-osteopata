@@ -1,0 +1,85 @@
+@use "../abstracts/mixins" as *;
+
+.section-header {
+  margin-bottom: 2rem;
+}
+
+.section-header__title,
+.legal-content__title,
+.contact-panel__title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.section-header__title,
+.legal-content__title,
+.contact-panel__title {
+  font-size: clamp(2rem, 4.6vw, 3.7rem);
+}
+
+.section-header__title {
+  max-width: 48rem;
+}
+
+.section-header__description,
+.legal-content__body {
+  max-width: 42rem;
+  margin-top: 1.25rem;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+.section-header__description p,
+.legal-content__body p,
+.legal-content__body ul {
+  margin-block: 0;
+}
+
+.legal-content {
+  min-height: 56vh;
+}
+
+.legal-content__body {
+  display: grid;
+  gap: 1.5rem;
+
+  h2 {
+    margin: 0 0 0.75rem;
+    color: var(--color-ink);
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  li {
+    margin-top: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+}
+
+.page-intro {
+  padding-block: 4rem;
+
+  @include media-md {
+    padding-block: 3rem;
+  }
+}
+
+.page-intro__title {
+  max-width: 56rem;
+  margin: 0;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.page-intro__description {
+  max-width: 42rem;
+  margin: 1.25rem 0 0;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}

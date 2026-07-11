@@ -7,23 +7,10 @@ interface Props {
 }
 
 const { href, variant = "primary", target, rel } = Astro.props;
-
-const variants = {
-  primary:
-    "border-accent-strong bg-accent-strong text-white hover:-translate-y-0.5",
-  secondary:
-    "border-accent-strong bg-surface text-accent-strong hover:-translate-y-0.5",
-  light: "border-white bg-white text-accent-strong hover:-translate-y-0.5",
-  outlineLight:
-    "border-white/70 bg-transparent text-white hover:-translate-y-0.5",
-};
 ---
 
 <a
-  class:list={[
-    "inline-flex min-h-11 items-center justify-center rounded-md border px-4 py-3 font-bold no-underline transition-transform",
-    variants[variant],
-  ]}
+  class:list={["button", `button--${variant}`]}
   href={href}
   target={target}
   rel={rel}
