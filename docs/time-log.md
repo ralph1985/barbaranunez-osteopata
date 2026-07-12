@@ -24,3 +24,4 @@ Registro oficial del tiempo comunicado por el usuario para el seguimiento y la f
 | 20260712-001 | 2026-07-12 | Mejora visual del tema azul                       | Capas, sombras, CTAs y tarjetas con más carácter visual           |       5 |  0,08 |     Sí     |        |
 | 20260712-002 | 2026-07-12 | Hito 14 - Iconos vectoriales y profundidad visual | Iconos SVG propios, degradados y sombras en tarjetas clave        |      10 |  0,17 |     Sí     |        |
 | 20260712-003 | 2026-07-12 | Animación gota hero                               | Microescena de gota y ondas en el hero con AnimeJS                |      10 |  0,17 |     Sí     | PR #21 |
+| 20260712-004 | 2026-07-12 | Imagen principal del hero                         | Integración de la imagen de marca de Bárbara en el inicio         |      15 |  0,25 |     Sí     | PR #22 |

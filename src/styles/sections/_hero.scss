@@ -41,19 +41,33 @@
 
 .hero__content {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
+}
+
+.hero__brand-image {
+  width: min(100%, 38rem);
+  height: auto;
+  border: 1px solid rgba(21, 80, 109, 0.16);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 1.25rem 3rem rgba(21, 80, 109, 0.12);
+  object-fit: contain;
+
+  @include media-md {
+    width: min(100%, 29rem);
+  }
 }
 
 .hero__title {
   max-width: 48rem;
   margin: 0;
-  font-size: clamp(2.7rem, 5.8vw, 4.7rem);
+  font-size: clamp(2.35rem, 5vw, 3.95rem);
   font-weight: 700;
   line-height: 1.06;
   text-wrap: balance;
 
   @include media-md {
-    font-size: clamp(2.25rem, 12vw, 3.4rem);
+    font-size: clamp(2.1rem, 10vw, 3rem);
   }
 }
 
