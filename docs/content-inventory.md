@@ -13,6 +13,7 @@ Fuente principal: `https://www.barbaranunez-osteopata.es/`.
 - Teléfono móvil: 620 88 89 37.
 - Teléfono fijo: 91 113 68 43.
 - Email: info@barbaranunez-osteopata.es.
+- Facebook: https://www.facebook.com/barbaranunezosteopata.
 - Horario publicado: lunes a viernes de 09:00 a 14:00 y de 16:00 a 21:00; sábados de 09:00 a 14:00.
 
 ## Servicios Verificados

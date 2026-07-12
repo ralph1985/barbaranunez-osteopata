@@ -5,9 +5,9 @@ Este documento recoge el tiempo dedicado a la creación de la web de Bárbara N�
 ## Resumen ejecutivo
 
 - Proyecto: web de Bárbara Núñez Osteópata.
-- Periodo registrado: del 8 al 12 de julio de 2026.
-- Tiempo total registrado: 223 minutos.
-- Equivalencia: 3 h 43 min, 3,72 horas facturables.
+- Periodo registrado: del 8 al 13 de julio de 2026.
+- Tiempo total registrado: 228 minutos.
+- Equivalencia: 3 h 48 min, 3,80 horas facturables.
 - Criterio: se registra únicamente tiempo confirmado y asociado a tareas cerradas.
 
 ## Dedicación por bloques
@@ -17,9 +17,9 @@ Este documento recoge el tiempo dedicado a la creación de la web de Bárbara N�
 | Estrategia, arranque y control   | Base del proyecto, documentación inicial y sistema de seguimiento de horas  | 53 min, 0,88 h      |
 | Contenido, mensaje y voz         | Inventario de contenido, guía de fotos, revisión de textos y tono de marca  | 30 min, 0,50 h      |
 | Diseño visual y marca            | Dirección visual, sistema de interfaz, tema azul, iconos e imagen principal | 55 min, 0,92 h      |
-| Desarrollo técnico e interacción | Páginas, navegación, cabecera, animaciones, WhatsApp y sistema de estilos   | 70 min, 1,17 h      |
+| Desarrollo técnico e interacción | Páginas, navegación, cabecera, animaciones, WhatsApp y sistema de estilos   | 75 min, 1,25 h      |
 | Publicación, SEO y despliegue    | Páginas legales, sitemap, robots.txt, configuración y despliegue en Vercel  | 15 min, 0,25 h      |
-| **Total registrado**             |                                                                             | **223 min, 3,72 h** |
+| **Total registrado**             |                                                                             | **228 min, 3,80 h** |
 
 ## Detalle de tareas
 
@@ -47,6 +47,7 @@ Este documento recoge el tiempo dedicado a la creación de la web de Bárbara N�
 | 2026-07-12 | Desarrollo técnico e interacción | Animación del hero                              | Añade una microescena de gota y ondas para reforzar el primer impacto de la web        | 10 min, 0,17 h |     Sí     | ID 20260712-003, PR #21 |
 | 2026-07-12 | Diseño visual y marca            | Imagen principal del hero                       | Integra la imagen de marca de Bárbara en el inicio para personalizar la experiencia    | 15 min, 0,25 h |     Sí     | ID 20260712-004, PR #22 |
 | 2026-07-12 | Publicación, SEO y despliegue    | Despliegue en Vercel                            | Conecta, sube y revisa el despliegue para que la web quede disponible online           | 10 min, 0,17 h |     Sí     | ID 20260712-005         |
+| 2026-07-13 | Desarrollo técnico e interacción | Enlace de Facebook                              | Añade el Facebook verificado junto a los canales de contacto principales               | 5 min, 0,08 h  |     Sí     | ID 20260713-001, PR #24 |
 
 ## Criterio de registro
 
