@@ -5,6 +5,7 @@ interface Props {
   description: string;
   aspectClass?: string;
   className?: string;
+  waterScene?: boolean;
   [key: string]: unknown;
 }
 
@@ -14,12 +15,35 @@ const {
   description,
   aspectClass = "photo-placeholder--landscape",
   className = "",
+  waterScene = false,
   ...attrs
 } = Astro.props;
 ---
 
-<figure {...attrs} class:list={["photo-placeholder", aspectClass, className]}>
+<figure
+  {...attrs}
+  class:list={[
+    "photo-placeholder",
+    aspectClass,
+    waterScene && "photo-placeholder--water-scene",
+    className,
+  ]}
+>
   <div class="photo-placeholder__wash"></div>
+  {
+    waterScene && (
+      <div class="photo-placeholder__water" aria-hidden="true" data-water-scene>
+        <div class="photo-placeholder__water-glow" />
+        <div class="photo-placeholder__drop" data-water-drop />
+        <div class="photo-placeholder__impact" data-water-impact />
+        <div class="photo-placeholder__surface">
+          <span data-water-ripple />
+          <span data-water-ripple />
+          <span data-water-ripple />
+        </div>
+      </div>
+    )
+  }
   <div class="photo-placeholder__frame"></div>
   <div class="photo-placeholder__ring photo-placeholder__ring--large"></div>
   <div class="photo-placeholder__ring photo-placeholder__ring--small"></div>
