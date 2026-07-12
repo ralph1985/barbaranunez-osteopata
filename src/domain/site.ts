@@ -1,9 +1,12 @@
+import type { IconName } from "./icon";
+
 export interface NavItem {
   label: string;
   href: string;
 }
 
 export interface Service {
+  icon: IconName;
   title: string;
   summary: string;
 }
@@ -18,6 +21,7 @@ export interface PageCopy {
 
 export interface HomeCard {
   href: string;
+  icon: IconName;
   eyebrow: string;
   title: string;
   summary: string;

@@ -1,5 +1,6 @@
 ---
 import { getSiteContent } from "../infrastructure/content/local-site-repository";
+import Icon from "../components/ui/Icon.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroSection from "../sections/HeroSection.astro";
 
@@ -15,6 +16,9 @@ const site = await getSiteContent();
         {
           site.homeCards.map((card) => (
             <a class="home-card" href={card.href}>
+              <span class="icon-badge home-card__icon" aria-hidden="true">
+                <Icon name={card.icon} />
+              </span>
               <p class="eyebrow">{card.eyebrow}</p>
               <h3 class="home-card__title">{card.title}</h3>
               <p class="home-card__summary">{card.summary}</p>

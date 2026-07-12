@@ -219,6 +219,24 @@ Resultado:
 - Páginas legales ajustadas para mejorar claridad, conservando pendientes explícitos de titularidad, privacidad y cookies.
 - Datos factuales inventariados mantenidos sin cambios.
 
+### Hito 14 - Iconos Vectoriales Y Profundidad Visual
+
+Estado: completado el 12 de julio de 2026, pendiente de revisión visual.
+
+Entregable:
+
+- Añadir iconos SVG propios sin incorporar dependencias externas.
+- Aplicar iconos decorativos en servicios, accesos principales, datos del hero y horario.
+- Reforzar degradados y sombras en tarjetas clave sin rediseñar la web.
+- Mantener la validación estándar del proyecto y abrir PR contra `main`.
+
+Resultado:
+
+- Componente local de iconos SVG con claves tipadas.
+- Servicios y tarjetas principales conectados a iconos desde el contenido local.
+- Tarjetas de servicios, home, datos del hero y horario con badges, degradados y sombras más consistentes.
+- No se modificaron fotos, textos legales, dominio ni datos de contacto.
+
 ### Hito 12 - Voz De Barbara En El Copy
 
 Estado: completado el 11 de julio de 2026, pendiente de revisión de copy.

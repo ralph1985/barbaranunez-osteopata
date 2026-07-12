@@ -78,8 +78,28 @@
 
 .hero__fact {
   @include card-surface(0.75);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
   padding: 1rem;
   border-color: var(--color-line-strong);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.84),
+      rgba(251, 253, 255, 0.64)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(220, 238, 246, 0.64),
+      rgba(216, 178, 110, 0.12)
+    );
+}
+
+.hero__fact-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-basis: 2.75rem;
 }
 
 .hero__fact-label {
