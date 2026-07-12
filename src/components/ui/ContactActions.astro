@@ -3,18 +3,22 @@ interface Props {
   phone: string;
   email: string;
   whatsappHref?: string;
+  facebookHref?: string;
   primaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
   secondaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
   tertiaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
+  quaternaryVariant?: "primary" | "secondary" | "light" | "outlineLight";
 }
 
 const {
   phone,
   email,
   whatsappHref,
+  facebookHref,
   primaryVariant = "primary",
   secondaryVariant = "secondary",
   tertiaryVariant = "secondary",
+  quaternaryVariant = "secondary",
 } = Astro.props;
 const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
 ---
@@ -93,4 +97,25 @@ const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
       <path d="m22 7-8.9 5.7a2 2 0 0 1-2.2 0L2 7"></path>
     </svg>
   </a>
+  {
+    facebookHref && (
+      <a
+        class:list={["contact-action", `contact-action--${quaternaryVariant}`]}
+        href={facebookHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver Facebook"
+        title="Facebook"
+      >
+        <svg
+          class="contact-action__icon"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M14 8.5h2V5h-2.8C10.3 5 9 6.8 9 9.5V12H7v3.5h2V22h4v-6.5h2.7l.5-3.5H13V9.7c0-.8.3-1.2 1-1.2Z" />
+        </svg>
+      </a>
+    )
+  }
 </div>

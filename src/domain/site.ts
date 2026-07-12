@@ -63,6 +63,7 @@ export interface ContactInfo {
   phone: string;
   landline?: string;
   whatsappHref: string;
+  facebookHref?: string;
   email: string;
   address: string;
   city: string;

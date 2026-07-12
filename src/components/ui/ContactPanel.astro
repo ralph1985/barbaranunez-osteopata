@@ -40,15 +40,30 @@ const { contact } = Astro.props;
     <p>
       <a href={`mailto:${contact.email}`}>{contact.email}</a>
     </p>
+    {
+      contact.facebookHref && (
+        <p>
+          <a
+            href={contact.facebookHref}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+        </p>
+      )
+    }
   </div>
   <div class="contact-panel__actions">
     <ContactActions
       email={contact.email}
       phone={contact.phone}
       whatsappHref={contact.whatsappHref}
+      facebookHref={contact.facebookHref}
       primaryVariant="light"
       secondaryVariant="outlineLight"
       tertiaryVariant="outlineLight"
+      quaternaryVariant="outlineLight"
     />
   </div>
 </div>
