@@ -1,5 +1,6 @@
 ---
 import ContactPanel from "../components/ui/ContactPanel.astro";
+import Icon from "../components/ui/Icon.astro";
 import type { ContactInfo } from "../domain/site";
 
 interface Props {
@@ -18,6 +19,9 @@ const { contact } = Astro.props;
     <ContactPanel contact={contact} />
   </div>
   <div class="hours-card" data-animate>
+    <span class="icon-badge hours-card__icon" aria-hidden="true">
+      <Icon name="time" />
+    </span>
     <h3 class="hours-card__title">{contact.copy.hoursTitle}</h3>
     <ul class="hours-card__list">
       {contact.hours.map((hour) => <li>{hour}</li>)}

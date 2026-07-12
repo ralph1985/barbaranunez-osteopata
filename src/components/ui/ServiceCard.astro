@@ -1,4 +1,5 @@
 ---
+import Icon from "./Icon.astro";
 import type { Service } from "../../domain/site";
 
 interface Props {
@@ -9,7 +10,9 @@ const { service } = Astro.props;
 ---
 
 <article class="service-card">
-  <span class="service-card__mark" aria-hidden="true"></span>
+  <span class="icon-badge service-card__icon" aria-hidden="true">
+    <Icon name={service.icon} />
+  </span>
   <h3 class="service-card__title">{service.title}</h3>
   <p class="service-card__summary">{service.summary}</p>
 </article>

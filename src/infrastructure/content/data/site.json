@@ -86,18 +86,21 @@
   "homeCards": [
     {
       "href": "/sobre/",
+      "icon": "person",
       "eyebrow": "Sobre Bárbara",
       "title": "Cómo trabajo",
       "summary": "Te atiendo desde la escucha, la valoración y la adaptación a tu proceso."
     },
     {
       "href": "/servicios/",
+      "icon": "services",
       "eyebrow": "Servicios",
       "title": "Osteopatía, masaje y pilates",
       "summary": "Consulta los tratamientos y clases con los que puedo ayudarte a cuidar tu movimiento."
     },
     {
       "href": "/contacto/",
+      "icon": "contact",
       "eyebrow": "Contacto",
       "title": "Pide cita",
       "summary": "Encuentra WhatsApp, teléfono, email, dirección y horario de la consulta."
@@ -128,22 +131,27 @@
   ],
   "services": [
     {
+      "icon": "structure",
       "title": "Osteopatía estructural",
       "summary": "Trabajo manualmente molestias musculares, articulares, tendinosas y ligamentosas, prestando atención al origen de la disfunción y no solo al síntoma."
     },
     {
+      "icon": "craniosacral",
       "title": "Osteopatía craneosacral",
       "summary": "Valoro tensiones desde la relación entre cráneo, columna y sacro para acompañar un mejor equilibrio corporal."
     },
     {
+      "icon": "massage",
       "title": "Técnico masajista deportivo",
       "summary": "Realizo masaje específico para musculatura sometida a carga deportiva, como apoyo en mantenimiento, preparación y recuperación."
     },
     {
+      "icon": "reformer",
       "title": "Pilates máquina",
       "summary": "Trabajo con máquinas y resistencias ajustables para mejorar fuerza, movilidad, control postural y coordinación."
     },
     {
+      "icon": "mat",
       "title": "Pilates mat",
       "summary": "En las sesiones de suelo usamos el propio peso corporal para trabajar core, flexibilidad, postura, equilibrio y conciencia corporal."
     }

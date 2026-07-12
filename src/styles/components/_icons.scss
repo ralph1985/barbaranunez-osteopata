@@ -1,0 +1,26 @@
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-badge {
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(21, 80, 109, 0.18);
+  border-radius: 999px;
+  color: var(--color-accent-strong);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(220, 238, 246, 0.72)
+    ),
+    linear-gradient(135deg, rgba(216, 178, 110, 0.28), transparent 62%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 14px 28px rgba(21, 80, 109, 0.12);
+}

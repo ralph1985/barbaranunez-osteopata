@@ -12,6 +12,28 @@
   min-height: 16rem;
   padding: 1.25rem;
   overflow: hidden;
+  background:
+    linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(251, 253, 255, 0.82)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(220, 238, 246, 0.72),
+      rgba(216, 178, 110, 0.12)
+    );
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+
+  &:hover,
+  &:focus-within {
+    border-color: var(--color-line-strong);
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-0.18rem);
+  }
 }
 
 .service-card::before,
@@ -25,17 +47,10 @@
   background: linear-gradient(180deg, var(--color-accent), var(--color-amber));
 }
 
-.service-card__mark {
-  display: block;
-  width: 2.25rem;
-  height: 0.25rem;
+.service-card__icon,
+.home-card__icon,
+.hours-card__icon {
   margin-bottom: 1rem;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    var(--color-accent-strong),
-    var(--color-amber)
-  );
 }
 
 .service-card__title,
@@ -83,6 +98,17 @@
   padding: 1.25rem;
   overflow: hidden;
   color: var(--color-muted);
+  background:
+    linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(251, 253, 255, 0.72)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(216, 178, 110, 0.15),
+      rgba(220, 238, 246, 0.72)
+    );
 }
 
 .hours-card__title {
@@ -103,9 +129,17 @@
   padding: 1.25rem;
   overflow: hidden;
   color: var(--color-ink);
+  background:
+    linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(251, 253, 255, 0.78)
+    ),
+    linear-gradient(135deg, rgba(220, 238, 246, 0.8), rgba(216, 178, 110, 0.13));
   text-decoration: none;
   transition:
     border-color 180ms ease,
+    box-shadow 180ms ease,
     transform 180ms ease;
 
   &:hover,

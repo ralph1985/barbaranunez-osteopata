@@ -1,5 +1,6 @@
 ---
 import ContactActions from "../components/ui/ContactActions.astro";
+import Icon from "../components/ui/Icon.astro";
 import PhotoPlaceholder from "../components/ui/PhotoPlaceholder.astro";
 import type { SiteContent } from "../domain/site";
 
@@ -28,14 +29,24 @@ const { site } = Astro.props;
     </div>
     <dl class="hero__facts" aria-label="Datos de la consulta" data-hero-item>
       <div class="hero__fact">
-        <dt class="hero__fact-label">{site.hero.addressLabel}</dt>
-        <dd class="hero__fact-value">
-          {site.contact.address}<br />{site.contact.city}
-        </dd>
+        <span class="icon-badge hero__fact-icon" aria-hidden="true">
+          <Icon name="location" />
+        </span>
+        <div>
+          <dt class="hero__fact-label">{site.hero.addressLabel}</dt>
+          <dd class="hero__fact-value">
+            {site.contact.address}<br />{site.contact.city}
+          </dd>
+        </div>
       </div>
       <div class="hero__fact">
-        <dt class="hero__fact-label">{site.hero.appointmentLabel}</dt>
-        <dd class="hero__fact-value">{site.contact.phone}</dd>
+        <span class="icon-badge hero__fact-icon" aria-hidden="true">
+          <Icon name="appointment" />
+        </span>
+        <div>
+          <dt class="hero__fact-label">{site.hero.appointmentLabel}</dt>
+          <dd class="hero__fact-value">{site.contact.phone}</dd>
+        </div>
       </div>
     </dl>
   </div>
