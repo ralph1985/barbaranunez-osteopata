@@ -1,0 +1,111 @@
+@use "../abstracts/tokens" as *;
+@use "../abstracts/mixins" as *;
+
+:root {
+  --color-ink: #18313f;
+  --color-muted: #58707c;
+  --color-bg: #eef7fb;
+  --color-surface: #fbfdff;
+  --color-soft: #dceef6;
+  --color-warm: #4f8fa8;
+  --color-warm-soft: #d4e8f1;
+  --color-amber: #d8b26e;
+  --color-amber-soft: rgba(216, 178, 110, 0.22);
+  --color-accent: #5f9db7;
+  --color-accent-strong: #15506d;
+  --color-line: rgba(24, 49, 63, 0.16);
+  --color-line-strong: rgba(21, 80, 109, 0.3);
+  --shadow-soft: 0 28px 80px rgba(21, 80, 109, 0.16);
+  --shadow-card: 0 18px 42px rgba(21, 80, 109, 0.12);
+  --shadow-card-hover: 0 24px 58px rgba(21, 80, 109, 0.18);
+  --header-height: #{$header-height};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--color-ink);
+  background:
+    linear-gradient(130deg, rgba(216, 178, 110, 0.13), transparent 28rem),
+    linear-gradient(25deg, rgba(21, 80, 109, 0.13), transparent 34rem),
+    linear-gradient(180deg, #f7fcff 0, var(--color-bg) 42rem, #e3f1f7 100%);
+  font-family: $font-sans;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(
+      112deg,
+      transparent 0 5.4rem,
+      rgba(21, 80, 109, 0.045) 5.4rem 5.48rem
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.52), transparent 40%);
+  pointer-events: none;
+}
+
+body.is-menu-open {
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.page-shell {
+  @include page-shell;
+}
+
+.section-space {
+  padding-block: 5rem;
+
+  @include media-md {
+    padding-block: 4rem;
+  }
+}
+
+.eyebrow {
+  @include eyebrow;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

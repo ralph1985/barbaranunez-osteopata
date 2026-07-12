@@ -17,21 +17,13 @@ const {
   tertiaryVariant = "secondary",
 } = Astro.props;
 const phoneHref = `tel:${phone.replace(/\s+/g, "")}`;
-const iconBaseClass =
-  "inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border p-3 no-underline transition-transform hover:-translate-y-0.5";
-const variants = {
-  primary: "border-accent-strong bg-accent-strong text-white",
-  secondary: "border-accent-strong bg-surface text-accent-strong",
-  light: "border-white bg-white text-accent-strong",
-  outlineLight: "border-white/70 bg-transparent text-white",
-};
 ---
 
-<div class="flex flex-wrap gap-3" aria-label="Acciones de contacto">
+<div class="contact-actions" aria-label="Acciones de contacto">
   {
     whatsappHref && (
       <a
-        class:list={[iconBaseClass, variants[primaryVariant]]}
+        class:list={["contact-action", `contact-action--${primaryVariant}`]}
         href={whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
@@ -39,7 +31,7 @@ const variants = {
         title="WhatsApp"
       >
         <svg
-          class="h-5 w-5"
+          class="contact-action__icon"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -56,15 +48,15 @@ const variants = {
   }
   <a
     class:list={[
-      iconBaseClass,
-      variants[whatsappHref ? secondaryVariant : primaryVariant],
+      "contact-action",
+      `contact-action--${whatsappHref ? secondaryVariant : primaryVariant}`,
     ]}
     href={phoneHref}
     aria-label="Llamar por teléfono"
     title="Llamar"
   >
     <svg
-      class="h-5 w-5"
+      class="contact-action__icon"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -80,15 +72,15 @@ const variants = {
   </a>
   <a
     class:list={[
-      iconBaseClass,
-      variants[whatsappHref ? tertiaryVariant : secondaryVariant],
+      "contact-action",
+      `contact-action--${whatsappHref ? tertiaryVariant : secondaryVariant}`,
     ]}
     href={`mailto:${email}`}
     aria-label="Escribir email"
     title="Email"
   >
     <svg
-      class="h-5 w-5"
+      class="contact-action__icon"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

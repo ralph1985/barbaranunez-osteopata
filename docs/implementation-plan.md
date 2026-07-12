@@ -236,6 +236,24 @@ Resultado:
 - Metadatos, navegación, horarios y legales mantienen voz neutra cuando resulta más claro o más correcto.
 - La estructura centralizada en `src/infrastructure/content/data/site.json` se mantiene sin cambios de contrato.
 
+### Hito 13 - Migracion Completa A SCSS
+
+Estado: completado el 11 de julio de 2026, pendiente de revisión visual.
+
+Entregable:
+
+- Sustituir la capa Tailwind por SCSS fuente organizado.
+- Mantener el tema azul aprobado en la prueba visual.
+- Conservar componentes Astro propios, navegación, animaciones y contenido sin cambios funcionales.
+- Validar con lint, build y `git diff --check`.
+
+Resultado:
+
+- Tailwind retirado de dependencias, configuración de Astro y marcado.
+- Estilos organizados en `src/styles/` por `abstracts`, `base`, `layout`, `components` y `sections`.
+- Tokens azules y estilos base movidos a SCSS como fuente principal.
+- Clases utilitarias sustituidas por clases semánticas en layouts, páginas, secciones y componentes UI.
+
 ## Decisiones Cerradas
 
 - Proyecto nuevo: `/home/rafa/dev/barbaranunez-osteopata`.
@@ -255,6 +273,7 @@ Resultado:
 - Copy: tono cercano y claro, sin promesas clínicas ni datos profesionales no verificados.
 - Voz del copy: Bárbara habla en primera persona en el copy comercial; legales y metadatos pueden mantener voz institucional.
 - Fotos: preparar huecos de foto reales, sin stock ni placeholders fotograficos definitivos.
+- Estilos: SCSS en `src/styles/**/*.scss` es la fuente principal; no se usa Tailwind en la V1 actual.
 
 ## Pendientes De Validar
 

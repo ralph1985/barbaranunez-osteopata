@@ -10,26 +10,19 @@ interface Props {
 const { about } = Astro.props;
 ---
 
-<section
-  class="border-y border-line bg-[linear-gradient(90deg,rgba(232,239,230,0.86),rgba(242,223,207,0.52))] py-20 max-md:py-16"
-  aria-labelledby="about-title"
->
-  <div class="mx-auto w-page" data-animate>
-    <div
-      class="grid grid-cols-[minmax(0,0.9fr)_minmax(320px,0.78fr)] items-start gap-12 max-lg:grid-cols-1"
-    >
+<section class="about" aria-labelledby="about-title">
+  <div class="about__inner page-shell" data-animate>
+    <div class="about__intro">
       <SectionHeader
         eyebrow={about.eyebrow}
         id="about-title"
         title={about.title}
       />
-      <div class="max-w-2xl space-y-4 text-lg text-muted">
+      <div class="about__body">
         {about.body.map((paragraph) => <p>{paragraph}</p>)}
       </div>
     </div>
-    <div
-      class="mt-10 grid grid-cols-[minmax(0,0.74fr)_minmax(280px,0.36fr)] gap-4 max-lg:grid-cols-1"
-    >
+    <div class="about__photos">
       {
         about.photos.map((photo) => (
           <PhotoPlaceholder
@@ -41,21 +34,13 @@ const { about } = Astro.props;
         ))
       }
     </div>
-    <div
-      class="mt-10 grid grid-cols-3 gap-4 max-md:grid-cols-1"
-      aria-label="Enfoque de trabajo"
-    >
+    <div class="about__principles" aria-label="Enfoque de trabajo">
       {
         about.principles.map((principle) => (
-          <article
-            class="min-h-48 rounded-md border border-line bg-surface/85 p-5 shadow-card"
-            data-animate
-          >
-            <span class="text-sm font-extrabold text-warm">
-              {principle.number}
-            </span>
-            <h3 class="mb-2 mt-3 text-xl font-bold">{principle.title}</h3>
-            <p class="m-0 text-muted">{principle.body}</p>
+          <article class="principle-card" data-animate>
+            <span class="principle-card__number">{principle.number}</span>
+            <h3 class="principle-card__title">{principle.title}</h3>
+            <p class="principle-card__body">{principle.body}</p>
           </article>
         ))
       }
@@ -64,7 +49,7 @@ const { about } = Astro.props;
 </section>
 
 <section
-  class="mx-auto w-page py-20 max-md:py-16"
+  class="approach page-shell section-space"
   aria-labelledby="approach-title"
   data-animate
 >

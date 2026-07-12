@@ -7,6 +7,7 @@ Este proyecto es la nueva web profesional de Bárbara Núñez, osteópata, técn
 - Proyecto nuevo e independiente en Astro con salida estática.
 - El primer hito de scaffold técnico, estructura de contenido local y plan vivo está completado.
 - La landing definitiva se construirá por hitos pequeños y revisables.
+- Los estilos fuente viven en `src/styles/**/*.scss`, organizados por base, layout, componentes y secciones.
 - El repositorio sera publico desde el inicio, asi que no se deben subir fotos sin permiso ni datos legales no verificados.
 - El tiempo facturable se registra en `docs/time-log.md` siguiendo las reglas de `AGENTS.md`.
 

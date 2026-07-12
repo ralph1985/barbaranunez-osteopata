@@ -1,0 +1,95 @@
+@use "../abstracts/mixins" as *;
+
+.hero {
+  position: relative;
+  display: grid;
+  min-height: calc(100vh - 5.3rem);
+  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 1.08fr);
+  align-items: center;
+  gap: 3.5rem;
+  padding-block: 3.5rem;
+
+  @include media-lg {
+    min-height: 0;
+    grid-template-columns: 1fr;
+  }
+
+  @include media-md {
+    padding-block: 2.5rem;
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  right: min(4vw, 2rem);
+  bottom: 2rem;
+  z-index: -1;
+  width: min(34rem, 62vw);
+  height: 12rem;
+  border: 1px solid rgba(21, 80, 109, 0.08);
+  background:
+    repeating-linear-gradient(
+      100deg,
+      transparent 0 1.15rem,
+      rgba(21, 80, 109, 0.07) 1.15rem 1.22rem
+    ),
+    linear-gradient(90deg, rgba(216, 178, 110, 0.18), transparent);
+  pointer-events: none;
+  transform: skewY(-4deg);
+}
+
+.hero__content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero__title {
+  max-width: 48rem;
+  margin: 0;
+  font-size: clamp(2.7rem, 5.8vw, 4.7rem);
+  font-weight: 700;
+  line-height: 1.06;
+  text-wrap: balance;
+
+  @include media-md {
+    font-size: clamp(2.25rem, 12vw, 3.4rem);
+  }
+}
+
+.hero__intro {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.125rem;
+}
+
+.hero__facts {
+  display: grid;
+  max-width: 36rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+
+  @include media-md {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero__fact {
+  @include card-surface(0.75);
+  padding: 1rem;
+  border-color: var(--color-line-strong);
+}
+
+.hero__fact-label {
+  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero__fact-value {
+  margin: 0.25rem 0 0;
+  font-weight: 700;
+}

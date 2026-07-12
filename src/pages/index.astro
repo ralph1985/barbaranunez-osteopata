@@ -8,26 +8,16 @@ const site = await getSiteContent();
 
 <BaseLayout site={site}>
   <HeroSection site={site} />
-  <section
-    class="border-y border-line bg-soft/55 py-16 max-md:py-12"
-    aria-labelledby="home-pages-title"
-  >
-    <div class="mx-auto w-page">
+  <section class="home-cards" aria-labelledby="home-pages-title">
+    <div class="home-cards__inner page-shell">
       <h2 id="home-pages-title" class="sr-only">Secciones principales</h2>
-      <div class="grid grid-cols-3 gap-4 max-lg:grid-cols-1" data-animate-group>
+      <div class="home-cards__grid" data-animate-group>
         {
           site.homeCards.map((card) => (
-            <a
-              class="min-h-56 rounded-md border border-line bg-surface/90 p-5 text-ink no-underline shadow-card transition-transform hover:-translate-y-1 hover:border-accent-strong"
-              href={card.href}
-            >
-              <p class="mb-3 text-xs font-extrabold tracking-wide text-accent-strong uppercase">
-                {card.eyebrow}
-              </p>
-              <h3 class="mb-3 mt-0 text-2xl leading-tight font-bold">
-                {card.title}
-              </h3>
-              <p class="m-0 text-muted">{card.summary}</p>
+            <a class="home-card" href={card.href}>
+              <p class="eyebrow">{card.eyebrow}</p>
+              <h3 class="home-card__title">{card.title}</h3>
+              <p class="home-card__summary">{card.summary}</p>
             </a>
           ))
         }

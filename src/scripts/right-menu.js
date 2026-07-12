@@ -12,12 +12,12 @@ export function initRightMenu() {
   function setOpen(isOpen) {
     openButton.setAttribute("aria-expanded", String(isOpen));
     panel.setAttribute("aria-hidden", String(!isOpen));
-    overlay.classList.toggle("hidden", !isOpen);
-    document.body.classList.toggle("overflow-hidden", isOpen);
+    overlay.classList.toggle("is-hidden", !isOpen);
+    document.body.classList.toggle("is-menu-open", isOpen);
 
     window.requestAnimationFrame(() => {
-      panel.classList.toggle("translate-x-full", !isOpen);
-      overlay.classList.toggle("opacity-0", !isOpen);
+      panel.classList.toggle("is-closed", !isOpen);
+      overlay.classList.toggle("is-transparent", !isOpen);
     });
 
     if (isOpen) {

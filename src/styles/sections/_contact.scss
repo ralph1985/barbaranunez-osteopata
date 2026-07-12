@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/tokens" as *;
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  align-items: start;
+  gap: 2rem;
+
+  @include media-lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-panel {
+  padding: 2rem;
+  border-radius: $radius;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(216, 178, 110, 0.2), transparent 42%),
+    linear-gradient(180deg, var(--color-accent-strong), #0d3f59);
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-panel__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.contact-panel__details {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  color: #fff;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contact-panel__actions {
+  margin-top: 1.5rem;
+}
