@@ -5,7 +5,7 @@
   position: relative;
   margin: 0;
   overflow: hidden;
-  border: 1px solid var(--color-line);
+  border: 1px solid var(--color-line-strong);
   border-radius: $radius;
   background: var(--color-surface);
   box-shadow: var(--shadow-soft);
@@ -36,17 +36,20 @@
 
 .photo-placeholder__wash {
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(220, 238, 246, 0.96),
-    rgba(212, 232, 241, 0.78)
-  );
+  background:
+    linear-gradient(155deg, rgba(255, 255, 255, 0.48), transparent 42%),
+    linear-gradient(
+      135deg,
+      rgba(220, 238, 246, 0.96),
+      rgba(212, 232, 241, 0.78)
+    );
 }
 
 .photo-placeholder__frame {
   inset: 1.25rem;
-  border: 1px dashed rgba(21, 80, 109, 0.3);
+  border: 1px solid rgba(21, 80, 109, 0.22);
   border-radius: $radius;
+  box-shadow: inset 0 0 0 0.45rem rgba(255, 255, 255, 0.26);
 }
 
 .photo-placeholder__ring {
@@ -58,7 +61,8 @@
   bottom: -3.5rem;
   width: 12rem;
   height: 12rem;
-  border: 1px solid rgba(21, 80, 109, 0.18);
+  border: 1px solid rgba(21, 80, 109, 0.22);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .photo-placeholder__ring--small {
@@ -66,7 +70,7 @@
   right: 2rem;
   width: 7rem;
   height: 7rem;
-  border: 1px solid rgba(79, 143, 168, 0.24);
+  border: 1px solid rgba(216, 178, 110, 0.42);
 }
 
 .photo-placeholder__caption {

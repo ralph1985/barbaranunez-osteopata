@@ -16,7 +16,10 @@
   padding: 2rem;
   border-radius: $radius;
   color: #fff;
-  background: var(--color-accent-strong);
+  background:
+    linear-gradient(135deg, rgba(216, 178, 110, 0.2), transparent 42%),
+    linear-gradient(180deg, var(--color-accent-strong), #0d3f59);
+  box-shadow: var(--shadow-soft);
 }
 
 .contact-panel__eyebrow {

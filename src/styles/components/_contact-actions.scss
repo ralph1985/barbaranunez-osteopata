@@ -14,7 +14,7 @@
   justify-content: center;
   padding: 0.75rem;
   border: 1px solid var(--contact-action-border);
-  border-radius: $radius;
+  border-radius: 999px;
   color: var(--contact-action-color);
   background: var(--contact-action-bg);
   text-decoration: none;
@@ -28,7 +28,11 @@
 
 .contact-action--primary {
   --contact-action-border: var(--color-accent-strong);
-  --contact-action-bg: var(--color-accent-strong);
+  --contact-action-bg: linear-gradient(
+    135deg,
+    var(--color-accent-strong),
+    var(--color-accent)
+  );
   --contact-action-color: #fff;
 }
 
@@ -40,7 +44,7 @@
 
 .contact-action--light {
   --contact-action-border: #fff;
-  --contact-action-bg: #fff;
+  --contact-action-bg: linear-gradient(135deg, #fff, #eaf6fb);
   --contact-action-color: var(--color-accent-strong);
 }
 

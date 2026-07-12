@@ -6,7 +6,8 @@
   background: linear-gradient(
     90deg,
     rgba(220, 238, 246, 0.9),
-    rgba(212, 232, 241, 0.62)
+    rgba(212, 232, 241, 0.62) 58%,
+    rgba(216, 178, 110, 0.18)
   );
 
   @include media-md {
