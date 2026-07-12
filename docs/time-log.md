@@ -2,24 +2,25 @@
 
 Registro oficial del tiempo comunicado por el usuario para el seguimiento y la futura facturación del proyecto.
 
-| ID           | Fecha      | Hito o tarea                                      | Descripción                                                       | Minutos | Horas | Facturable | Notas |
-| ------------ | ---------- | ------------------------------------------------- | ----------------------------------------------------------------- | ------: | ----: | :--------: | ----- |
-| 20260708-001 | 2026-07-08 | Hito 1 - Scaffold y plan                          | Scaffold, documentación y PR inicial fusionada                    |      30 |  0,50 |     Sí     |       |
-| 20260708-002 | 2026-07-08 | Agente de registro horario                        | Implementación del protocolo, registro y comando interactivo      |      15 |  0,25 |     Sí     |       |
-| 20260709-001 | 2026-07-09 | Ajuste del aviso de registro horario              | Descripción breve antes de solicitar el tiempo dedicado           |       5 |  0,08 |     Sí     |       |
-| 20260710-001 | 2026-07-10 | Hito 2 - Inventario y contenido                   | Inventario factual, copy revisable y PR draft del Hito 2          |       5 |  0,08 |     Sí     |       |
-| 20260710-002 | 2026-07-10 | Hito 3 - Diseño landing                           | Diseño visual, asset placeholder y PR draft del Hito 3            |       5 |  0,08 |     Sí     |       |
-| 20260710-003 | 2026-07-10 | Hito 3.5 - Sistema UI y Tailwind                  | Tailwind 4, utilidades y componentes UI propios                   |      10 |  0,17 |     Sí     |       |
-| 20260710-004 | 2026-07-10 | Hito 4 - Legal y publicación                      | Legales base, SEO técnico, robots, sitemap y configuración Vercel |       5 |  0,08 |     Sí     |       |
-| 20260710-005 | 2026-07-10 | Hito 5 - AnimeJS y movimiento                     | Dependencia AnimeJS, entrypoint JS y animaciones accesibles       |      15 |  0,25 |     Sí     |       |
-| 20260710-006 | 2026-07-10 | Hito 6 - Páginas y menú lateral                   | Páginas separadas, menú derecho y contacto por WhatsApp           |      20 |  0,33 |     Sí     |       |
-| 20260710-007 | 2026-07-10 | Hito 7 - Cabecera persistente                     | Cabecera sticky con acceso al menú siempre visible                |       5 |  0,08 |     Sí     |       |
-| 20260711-001 | 2026-07-11 | Hito 8 - Hero y contacto                          | Dirección completa, H1 ajustado y CTAs con iconos                 |      10 |  0,17 |     Sí     |       |
-| 20260711-002 | 2026-07-11 | Hito 9 - Ahorro de tokens en agentes              | Reglas de agentes para reducir contexto y lecturas innecesarias   |       3 |  0,05 |     Sí     |       |
-| 20260711-003 | 2026-07-11 | Hito 10 - Placeholders y guía fotos               | Huecos visuales preparados y guía de fotos para Bárbara           |      10 |  0,17 |     Sí     |       |
-| 20260711-004 | 2026-07-11 | Hito 11 - Revisión de textos                      | Copy principal, legales revisables y centralización de contenido  |      10 |  0,17 |     Sí     |       |
-| 20260711-005 | 2026-07-11 | Hito 12 - Voz de Bárbara                          | Copy comercial en primera persona y documentación editorial       |       5 |  0,08 |     Sí     |       |
-| 20260711-006 | 2026-07-11 | Prueba azul y SCSS inicial                        | Tema azul, SCSS ligero y PR draft de revisión visual              |      10 |  0,17 |     Sí     |       |
-| 20260711-007 | 2026-07-11 | Migración completa a SCSS                         | Tailwind retirado, SCSS semántico y PR draft actualizado          |      10 |  0,17 |     Sí     |       |
-| 20260712-001 | 2026-07-12 | Mejora visual del tema azul                       | Capas, sombras, CTAs y tarjetas con más carácter visual           |       5 |  0,08 |     Sí     |       |
-| 20260712-002 | 2026-07-12 | Hito 14 - Iconos vectoriales y profundidad visual | Iconos SVG propios, degradados y sombras en tarjetas clave        |      10 |  0,17 |     Sí     |       |
+| ID           | Fecha      | Hito o tarea                                      | Descripción                                                       | Minutos | Horas | Facturable | Notas  |
+| ------------ | ---------- | ------------------------------------------------- | ----------------------------------------------------------------- | ------: | ----: | :--------: | ------ |
+| 20260708-001 | 2026-07-08 | Hito 1 - Scaffold y plan                          | Scaffold, documentación y PR inicial fusionada                    |      30 |  0,50 |     Sí     |        |
+| 20260708-002 | 2026-07-08 | Agente de registro horario                        | Implementación del protocolo, registro y comando interactivo      |      15 |  0,25 |     Sí     |        |
+| 20260709-001 | 2026-07-09 | Ajuste del aviso de registro horario              | Descripción breve antes de solicitar el tiempo dedicado           |       5 |  0,08 |     Sí     |        |
+| 20260710-001 | 2026-07-10 | Hito 2 - Inventario y contenido                   | Inventario factual, copy revisable y PR draft del Hito 2          |       5 |  0,08 |     Sí     |        |
+| 20260710-002 | 2026-07-10 | Hito 3 - Diseño landing                           | Diseño visual, asset placeholder y PR draft del Hito 3            |       5 |  0,08 |     Sí     |        |
+| 20260710-003 | 2026-07-10 | Hito 3.5 - Sistema UI y Tailwind                  | Tailwind 4, utilidades y componentes UI propios                   |      10 |  0,17 |     Sí     |        |
+| 20260710-004 | 2026-07-10 | Hito 4 - Legal y publicación                      | Legales base, SEO técnico, robots, sitemap y configuración Vercel |       5 |  0,08 |     Sí     |        |
+| 20260710-005 | 2026-07-10 | Hito 5 - AnimeJS y movimiento                     | Dependencia AnimeJS, entrypoint JS y animaciones accesibles       |      15 |  0,25 |     Sí     |        |
+| 20260710-006 | 2026-07-10 | Hito 6 - Páginas y menú lateral                   | Páginas separadas, menú derecho y contacto por WhatsApp           |      20 |  0,33 |     Sí     |        |
+| 20260710-007 | 2026-07-10 | Hito 7 - Cabecera persistente                     | Cabecera sticky con acceso al menú siempre visible                |       5 |  0,08 |     Sí     |        |
+| 20260711-001 | 2026-07-11 | Hito 8 - Hero y contacto                          | Dirección completa, H1 ajustado y CTAs con iconos                 |      10 |  0,17 |     Sí     |        |
+| 20260711-002 | 2026-07-11 | Hito 9 - Ahorro de tokens en agentes              | Reglas de agentes para reducir contexto y lecturas innecesarias   |       3 |  0,05 |     Sí     |        |
+| 20260711-003 | 2026-07-11 | Hito 10 - Placeholders y guía fotos               | Huecos visuales preparados y guía de fotos para Bárbara           |      10 |  0,17 |     Sí     |        |
+| 20260711-004 | 2026-07-11 | Hito 11 - Revisión de textos                      | Copy principal, legales revisables y centralización de contenido  |      10 |  0,17 |     Sí     |        |
+| 20260711-005 | 2026-07-11 | Hito 12 - Voz de Bárbara                          | Copy comercial en primera persona y documentación editorial       |       5 |  0,08 |     Sí     |        |
+| 20260711-006 | 2026-07-11 | Prueba azul y SCSS inicial                        | Tema azul, SCSS ligero y PR draft de revisión visual              |      10 |  0,17 |     Sí     |        |
+| 20260711-007 | 2026-07-11 | Migración completa a SCSS                         | Tailwind retirado, SCSS semántico y PR draft actualizado          |      10 |  0,17 |     Sí     |        |
+| 20260712-001 | 2026-07-12 | Mejora visual del tema azul                       | Capas, sombras, CTAs y tarjetas con más carácter visual           |       5 |  0,08 |     Sí     |        |
+| 20260712-002 | 2026-07-12 | Hito 14 - Iconos vectoriales y profundidad visual | Iconos SVG propios, degradados y sombras en tarjetas clave        |      10 |  0,17 |     Sí     |        |
+| 20260712-003 | 2026-07-12 | Animación gota hero                               | Microescena de gota y ondas en el hero con AnimeJS                |      10 |  0,17 |     Sí     | PR #21 |
